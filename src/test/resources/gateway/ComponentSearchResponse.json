@@ -1,0 +1,23 @@
+{
+    "component": {
+        "id": "3bfc5973-13be-4784-b59f-c650d118898b",
+        "key": "org.testng:testng",
+        "name": "testng",
+        "qualifier": "TRK",
+        "measures": [
+            {
+                "metric": "complexity",
+                "value": "7142"
+            },
+            {
+                "metric": "violations",
+                "value": "1603",
+                "bestValue": false
+            },
+            {
+                "metric": "ncloc",
+                "value": "35335"
+            }
+        ]
+    }
+}

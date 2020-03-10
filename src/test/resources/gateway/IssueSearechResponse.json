@@ -1,0 +1,4372 @@
+{
+  "value" : {
+    "paging" : {
+      "pageIndex" : 1,
+      "pageSize" : 100,
+      "total" : 1544
+    },
+    "issues" : [ {
+      "key" : "AV1GDmj6NAVDjyrgWoNi",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "CONFIRMED",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 133,
+      "hash" : "53e44d43e22a4c58d3a711137fefad95",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2019-07-17T22:06:11+0200",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 133,
+        "endLine" : 133,
+        "startOffset" : 35,
+        "endOffset" : 58
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 133,
+            "endLine" : 133,
+            "startOffset" : 35,
+            "endOffset" : 58
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 133,
+            "endLine" : 133,
+            "startOffset" : 8,
+            "endOffset" : 31
+          },
+          "msg" : "Implies 'equals' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 130,
+            "endLine" : 130,
+            "startOffset" : 8,
+            "endOffset" : 41
+          },
+          "msg" : "Implies 'actual' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 127,
+            "endLine" : 127,
+            "startOffset" : 9,
+            "endOffset" : 25
+          },
+          "msg" : "Implies 'expected' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmj7NAVDjyrgWoNq",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S117",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 161,
+      "hash" : "79a6a3076d375ba0de449ffba57e065f",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 161,
+        "endLine" : 161,
+        "startOffset" : 13,
+        "endOffset" : 20
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmj7NAVDjyrgWoNr",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S117",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 162,
+      "hash" : "666f8d3a58f2d41f1410f106591f44c4",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 162,
+        "endLine" : 162,
+        "startOffset" : 13,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmj8NAVDjyrgWoNs",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\"!=\") instead.",
+      "line" : 602,
+      "hash" : "4ad6a2b5a21830437871b371e8617a43",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 602,
+        "endLine" : 602,
+        "startOffset" : 10,
+        "endOffset" : 31
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWQuLb8WbXXTsx7OQZe3",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\">\") instead.",
+      "line" : 609,
+      "hash" : "b1f3ec83dbdb7a94476b2f908ce2bbba",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 609,
+        "endLine" : 609,
+        "startOffset" : 15,
+        "endOffset" : 54
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmj8NAVDjyrgWoNu",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\"!=\") instead.",
+      "line" : 668,
+      "hash" : "4ad6a2b5a21830437871b371e8617a43",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 668,
+        "endLine" : 668,
+        "startOffset" : 10,
+        "endOffset" : 31
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWQuLb8WbXXTsx7OQZe4",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\">\") instead.",
+      "line" : 675,
+      "hash" : "b1f3ec83dbdb7a94476b2f908ce2bbba",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 675,
+        "endLine" : 675,
+        "startOffset" : 15,
+        "endOffset" : 54
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmj6NAVDjyrgWoNe",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1192",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Define a constant instead of duplicating this literal \" and actual: \" 8 times.",
+      "line" : 1012,
+      "hash" : "33c7feaaa06c56a154791cf9d71286b5",
+      "author" : null,
+      "effort" : "18min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1012,
+        "endLine" : 1012,
+        "startOffset" : 62,
+        "endOffset" : 77
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1012,
+            "endLine" : 1012,
+            "startOffset" : 62,
+            "endOffset" : 77
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1063,
+            "endLine" : 1063,
+            "startOffset" : 63,
+            "endOffset" : 78
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1121,
+            "endLine" : 1121,
+            "startOffset" : 60,
+            "endOffset" : 75
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1257,
+            "endLine" : 1257,
+            "startOffset" : 55,
+            "endOffset" : 70
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1280,
+            "endLine" : 1280,
+            "startOffset" : 55,
+            "endOffset" : 70
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1288,
+            "endLine" : 1288,
+            "startOffset" : 55,
+            "endOffset" : 70
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1319,
+            "endLine" : 1319,
+            "startOffset" : 55,
+            "endOffset" : 70
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1360,
+            "endLine" : 1360,
+            "startOffset" : 53,
+            "endOffset" : 68
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "18min"
+    }, {
+      "key" : "AWiRIc7a8oTo2G_b3Xvr",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3776",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Refactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.",
+      "line" : 1139,
+      "hash" : "a9c1e942b0de1e6eae8888ec5fb30cf4",
+      "author" : null,
+      "effort" : "13min",
+      "creationDate" : "2019-01-27T22:03:56+0100",
+      "updateDate" : "2019-01-27T22:03:56+0100",
+      "tags" : [ "brain-overload" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1139,
+        "endLine" : 1139,
+        "startOffset" : 21,
+        "endOffset" : 33
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1140,
+            "endLine" : 1140,
+            "startOffset" : 4,
+            "endOffset" : 6
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 4,
+            "endOffset" : 6
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 24,
+            "endOffset" : 26
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 45,
+            "endOffset" : 47
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 64,
+            "endOffset" : 66
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1145,
+            "endLine" : 1145,
+            "startOffset" : 6,
+            "endOffset" : 8
+          },
+          "msg" : "+2 (incl 1 for nesting)",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1147,
+            "endLine" : 1147,
+            "startOffset" : 8,
+            "endOffset" : 12
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1151,
+            "endLine" : 1151,
+            "startOffset" : 4,
+            "endOffset" : 6
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1156,
+            "endLine" : 1156,
+            "startOffset" : 4,
+            "endOffset" : 7
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1160,
+            "endLine" : 1160,
+            "startOffset" : 44,
+            "endOffset" : 45
+          },
+          "msg" : "+2 (incl 1 for nesting)",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 6,
+            "endOffset" : 8
+          },
+          "msg" : "+2 (incl 1 for nesting)",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 20,
+            "endOffset" : 22
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 6,
+            "endOffset" : 8
+          },
+          "msg" : "+2 (incl 1 for nesting)",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 21,
+            "endOffset" : 23
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 35,
+            "endOffset" : 37
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 49,
+            "endOffset" : 51
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1168,
+            "endLine" : 1168,
+            "startOffset" : 6,
+            "endOffset" : 8
+          },
+          "msg" : "+2 (incl 1 for nesting)",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1170,
+            "endLine" : 1170,
+            "startOffset" : 8,
+            "endOffset" : 12
+          },
+          "msg" : "+1",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "13min"
+    }, {
+      "key" : "AV1GDmj6NAVDjyrgWoNj",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 1144,
+      "hash" : "753eb44873510bc6b4f084d392296152",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1144,
+        "endLine" : 1144,
+        "startOffset" : 49,
+        "endOffset" : 63
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 49,
+            "endOffset" : 63
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmj7NAVDjyrgWoNl",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 1144,
+      "hash" : "753eb44873510bc6b4f084d392296152",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1144,
+        "endLine" : 1144,
+        "startOffset" : 27,
+        "endOffset" : 43
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 27,
+            "endOffset" : 43
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1144,
+            "endLine" : 1144,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmj6NAVDjyrgWoNf",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1192",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Define a constant instead of duplicating this literal \"Arrays not equal: \" 3 times.",
+      "line" : 1148,
+      "hash" : "9f882274296e3eb8ff08918b52bec507",
+      "author" : null,
+      "effort" : "8min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-11-25T22:24:08+0100",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1148,
+        "endLine" : 1148,
+        "startOffset" : 13,
+        "endOffset" : 33
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1148,
+            "endLine" : 1148,
+            "startOffset" : 13,
+            "endOffset" : 33
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1192,
+            "endLine" : 1192,
+            "startOffset" : 10,
+            "endOffset" : 30
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1208,
+            "endLine" : 1208,
+            "startOffset" : 10,
+            "endOffset" : 30
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "8min"
+    }, {
+      "key" : "AV1GDmj6NAVDjyrgWoNg",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1192",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Define a constant instead of duplicating this literal \" and \" 3 times.",
+      "line" : 1148,
+      "hash" : "9f882274296e3eb8ff08918b52bec507",
+      "author" : null,
+      "effort" : "8min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-11-25T22:24:08+0100",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1148,
+        "endLine" : 1148,
+        "startOffset" : 64,
+        "endOffset" : 71
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1148,
+            "endLine" : 1148,
+            "startOffset" : 64,
+            "endOffset" : 71
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1192,
+            "endLine" : 1192,
+            "startOffset" : 61,
+            "endOffset" : 68
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1208,
+            "endLine" : 1208,
+            "startOffset" : 61,
+            "endOffset" : 68
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "8min"
+    }, {
+      "key" : "AWiRIc7a8oTo2G_b3Xvp",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 1164,
+      "hash" : "e0c94605df69d5e6553309345e82c275",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2019-01-27T22:03:56+0100",
+      "updateDate" : "2019-01-27T22:03:56+0100",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1164,
+        "endLine" : 1164,
+        "startOffset" : 24,
+        "endOffset" : 33
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 24,
+            "endOffset" : 33
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 23,
+            "endOffset" : 32
+          },
+          "msg" : "Implies 'e' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 23,
+            "endOffset" : 32
+          },
+          "msg" : "Implies 'e' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 24,
+            "endOffset" : 33
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 23,
+            "endOffset" : 32
+          },
+          "msg" : "Implies 'e' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 23,
+            "endOffset" : 32
+          },
+          "msg" : "Implies 'e' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWiRIc7a8oTo2G_b3Xvq",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 1164,
+      "hash" : "e0c94605df69d5e6553309345e82c275",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2019-01-27T22:03:56+0100",
+      "updateDate" : "2019-01-27T22:03:56+0100",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1164,
+        "endLine" : 1164,
+        "startOffset" : 39,
+        "endOffset" : 48
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 39,
+            "endOffset" : 48
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 10,
+            "endOffset" : 19
+          },
+          "msg" : "Implies 'a' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 10,
+            "endOffset" : 19
+          },
+          "msg" : "Implies 'a' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1164,
+            "endLine" : 1164,
+            "startOffset" : 39,
+            "endOffset" : 48
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 10,
+            "endOffset" : 19
+          },
+          "msg" : "Implies 'a' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1161,
+            "endLine" : 1161,
+            "startOffset" : 10,
+            "endOffset" : 19
+          },
+          "msg" : "Implies 'a' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmj7NAVDjyrgWoNk",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 1190,
+      "hash" : "753eb44873510bc6b4f084d392296152",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1190,
+        "endLine" : 1190,
+        "startOffset" : 27,
+        "endOffset" : 43
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1190,
+            "endLine" : 1190,
+            "startOffset" : 27,
+            "endOffset" : 43
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1190,
+            "endLine" : 1190,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1190,
+            "endLine" : 1190,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmj7NAVDjyrgWoNm",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2589",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this expression which always evaluates to \"true\"",
+      "line" : 1190,
+      "hash" : "753eb44873510bc6b4f084d392296152",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cert", "cwe", "misra", "redundant" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1190,
+        "endLine" : 1190,
+        "startOffset" : 49,
+        "endOffset" : 63
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1190,
+            "endLine" : 1190,
+            "startOffset" : 49,
+            "endOffset" : 63
+          },
+          "msg" : "Expression is always true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1190,
+            "endLine" : 1190,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is not null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        }, {
+          "textRange" : {
+            "startLine" : 1190,
+            "endLine" : 1190,
+            "startOffset" : 9,
+            "endOffset" : 23
+          },
+          "msg" : "Implies 'actual' is true.",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmj8NAVDjyrgWoNw",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1155",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use isEmpty() to check whether the collection is empty or not.",
+      "line" : 1206,
+      "hash" : "57287c675edd3d72fdbd5bab7fff146e",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "clumsy" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1206,
+        "endLine" : 1206,
+        "startOffset" : 8,
+        "endOffset" : 36
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmj6NAVDjyrgWoNh",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1192",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Define a constant instead of duplicating this literal \"Sets not equal: expected: \" 3 times.",
+      "line" : 1257,
+      "hash" : "dc0f95e4c53c47c29289ef53468c6c09",
+      "author" : null,
+      "effort" : "8min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1257,
+        "endLine" : 1257,
+        "startOffset" : 13,
+        "endOffset" : 41
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1257,
+            "endLine" : 1257,
+            "startOffset" : 13,
+            "endOffset" : 41
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1280,
+            "endLine" : 1280,
+            "startOffset" : 13,
+            "endOffset" : 41
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 1288,
+            "endLine" : 1288,
+            "startOffset" : 13,
+            "endOffset" : 41
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/Assert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "8min"
+    }, {
+      "key" : "AV1GDmj7NAVDjyrgWoNp",
+      "component" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S112",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Define and throw a dedicated exception instead of using a generic one.",
+      "line" : 1584,
+      "hash" : "774e5f864923a62abe446efcc801737d",
+      "author" : null,
+      "effort" : "20min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cert", "cwe", "error-handling" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 1584,
+        "endLine" : 1584,
+        "startOffset" : 22,
+        "endOffset" : 31
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "20min"
+    }, {
+      "key" : "AV1GDmkLNAVDjyrgWoOZ",
+      "component" : "org.testng:testng:src/main/java/org/testng/AssertJUnit.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\"!=\") instead.",
+      "line" : 100,
+      "hash" : "4ad6a2b5a21830437871b371e8617a43",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 100,
+        "endLine" : 100,
+        "startOffset" : 10,
+        "endOffset" : 31
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWQuLb5BbXXTsx7OQZea",
+      "component" : "org.testng:testng:src/main/java/org/testng/AssertJUnit.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\">\") instead.",
+      "line" : 103,
+      "hash" : "f67e0d2ebebdac4bfe0adb32a4117e7e",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 103,
+        "endLine" : 104,
+        "startOffset" : 15,
+        "endOffset" : 17
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmkLNAVDjyrgWoOb",
+      "component" : "org.testng:testng:src/main/java/org/testng/AssertJUnit.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\"!=\") instead.",
+      "line" : 127,
+      "hash" : "4ad6a2b5a21830437871b371e8617a43",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 127,
+        "endLine" : 127,
+        "startOffset" : 10,
+        "endOffset" : 31
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWQuLb5BbXXTsx7OQZeb",
+      "component" : "org.testng:testng:src/main/java/org/testng/AssertJUnit.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1940",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use the opposite operator (\">\") instead.",
+      "line" : 130,
+      "hash" : "b1f3ec83dbdb7a94476b2f908ce2bbba",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 130,
+        "endLine" : 130,
+        "startOffset" : 15,
+        "endOffset" : 54
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV9478AdVLHgQ8g15S_s",
+      "component" : "org.testng:testng:src/main/java/org/testng/ClassMethodMap.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3824",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace this \"Map.get()\" and condition with a call to \"Map.computeIfAbsent()\".",
+      "line" : 36,
+      "hash" : "182141fbf1303f72ab6a5243a933819e",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-11-01T19:53:16+0100",
+      "updateDate" : "2017-11-01T19:53:16+0100",
+      "tags" : [ "java8" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 36,
+        "endLine" : 36,
+        "startOffset" : 36,
+        "endOffset" : 58
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 39,
+            "endLine" : 39,
+            "startOffset" : 8,
+            "endOffset" : 20
+          },
+          "msg" : "'Map.put()' is invoked with same key.",
+          "component" : "org.testng:testng:src/main/java/org/testng/ClassMethodMap.java"
+        }, {
+          "textRange" : {
+            "startLine" : 37,
+            "endLine" : 37,
+            "startOffset" : 10,
+            "endOffset" : 19
+          },
+          "msg" : "Implies 'l' can be null.",
+          "component" : "org.testng:testng:src/main/java/org/testng/ClassMethodMap.java"
+        }, {
+          "textRange" : {
+            "startLine" : 36,
+            "endLine" : 36,
+            "startOffset" : 36,
+            "endOffset" : 48
+          },
+          "msg" : "'Map.get()' is invoked.",
+          "component" : "org.testng:testng:src/main/java/org/testng/ClassMethodMap.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "assignee" : "krmahadevan@github",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkSNAVDjyrgWoOd",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"verbose\" to prevent any misunderstanding/clash with field \"VERBOSE\" defined on line 17.",
+      "line" : 22,
+      "hash" : "7189eb20fe8295a262b8191865ca2827",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-13T20:52:57+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 22,
+        "endLine" : 22,
+        "startOffset" : 17,
+        "endOffset" : 24
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkSNAVDjyrgWoOe",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"groups\" to prevent any misunderstanding/clash with field \"GROUPS\" defined on line 24.",
+      "line" : 27,
+      "hash" : "d2b77a0737e7aa712e03982a043f4598",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 27,
+        "endLine" : 27,
+        "startOffset" : 16,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkSNAVDjyrgWoOf",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"junit\" to prevent any misunderstanding/clash with field \"JUNIT\" defined on line 41.",
+      "line" : 44,
+      "hash" : "dbb797e1a8952a80d431fb4c2a01b347",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 44,
+        "endLine" : 44,
+        "startOffset" : 17,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkTNAVDjyrgWoOg",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"mixed\" to prevent any misunderstanding/clash with field \"MIXED\" defined on line 46.",
+      "line" : 53,
+      "hash" : "5df65841720eba06df39eb8105a02cb4",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 53,
+        "endLine" : 53,
+        "startOffset" : 17,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkUNAVDjyrgWoOh",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"listener\" to prevent any misunderstanding/clash with field \"LISTENER\" defined on line 55.",
+      "line" : 62,
+      "hash" : "c04b00766f7ab2d5604a98bb65048f91",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 62,
+        "endLine" : 62,
+        "startOffset" : 16,
+        "endOffset" : 24
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkUNAVDjyrgWoOi",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"reporter\" to prevent any misunderstanding/clash with field \"REPORTER\" defined on line 122.",
+      "line" : 125,
+      "hash" : "a8f9e9f7fcd9ce35e34b806fd995cd4a",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 125,
+        "endLine" : 125,
+        "startOffset" : 16,
+        "endOffset" : 24
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkUNAVDjyrgWoOj",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"port\" to prevent any misunderstanding/clash with field \"PORT\" defined on line 168.",
+      "line" : 171,
+      "hash" : "28d43ac6a01a6c3a88587834a1c85fee",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 171,
+        "endLine" : 171,
+        "startOffset" : 17,
+        "endOffset" : 21
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkUNAVDjyrgWoOk",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"host\" to prevent any misunderstanding/clash with field \"HOST\" defined on line 173.",
+      "line" : 176,
+      "hash" : "51f310547ffc281a840d6f7c3ee8b0d2",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 176,
+        "endLine" : 176,
+        "startOffset" : 16,
+        "endOffset" : 20
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkUNAVDjyrgWoOl",
+      "component" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1845",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Rename field \"debug\" to prevent any misunderstanding/clash with field \"DEBUG\" defined on line 199.",
+      "line" : 202,
+      "hash" : "5153ed8a86a9f795f9f927a55a9720ca",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "confusing" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 202,
+        "endLine" : 202,
+        "startOffset" : 17,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmlBNAVDjyrgWoPZ",
+      "component" : "org.testng:testng:src/main/java/org/testng/ConversionUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1118",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Add a private constructor to hide the implicit public one.",
+      "line" : 15,
+      "hash" : "0939d9b18513a65e49402ebe7f7bc226",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2019-02-23T04:58:14+0100",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 15,
+        "endLine" : 15,
+        "startOffset" : 13,
+        "endOffset" : 28
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AWcnIR2rkEeD8QRkZEyM",
+      "component" : "org.testng:testng:src/main/java/org/testng/ConversionUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S4838",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Change \"Object\" to the type handled by the Collection.",
+      "line" : 22,
+      "hash" : "8e3f7f1a411a5de5139f0fa6360d4f8d",
+      "author" : null,
+      "effort" : "1min",
+      "creationDate" : "2011-03-23T21:36:29+0100",
+      "updateDate" : "2018-11-18T15:00:33+0100",
+      "tags" : [ "bad-practice", "clumsy" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 22,
+        "endLine" : 22,
+        "startOffset" : 9,
+        "endOffset" : 15
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 22,
+            "endLine" : 22,
+            "startOffset" : 20,
+            "endOffset" : 24
+          },
+          "msg" : "Collection item type is \"Object[]\"",
+          "component" : "org.testng:testng:src/main/java/org/testng/ConversionUtils.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "1min"
+    }, {
+      "key" : "AV1GDmkaNAVDjyrgWoOr",
+      "component" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_files\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 28,
+      "hash" : "9c95d4b79567bb73334581f2746f4995",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 28,
+        "endLine" : 28,
+        "startOffset" : 23,
+        "endOffset" : 30
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmkaNAVDjyrgWoOs",
+      "component" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_outputDirectory\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 31,
+      "hash" : "d144701464493cfd9aa64b5ab03cd93a",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 31,
+        "endLine" : 31,
+        "startOffset" : 17,
+        "endOffset" : 34
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWcnIR6YkEeD8QRkZEyX",
+      "component" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S4823",
+      "status" : "TO_REVIEW",
+      "resolution" : null,
+      "severity" : null,
+      "message" : "Make sure that command line arguments are used safely here.",
+      "line" : 33,
+      "hash" : "592bccc4002cf3dfc6991fcccb0be68e",
+      "author" : null,
+      "effort" : null,
+      "creationDate" : "2018-06-13T20:52:57+0200",
+      "updateDate" : "2018-11-18T15:00:33+0100",
+      "tags" : [ "cwe", "owasp-a1", "sans-top25-insecure" ],
+      "type" : "SECURITY_HOTSPOT",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 33,
+        "endLine" : 33,
+        "startOffset" : 26,
+        "endOffset" : 39
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 35,
+            "endLine" : 35,
+            "startOffset" : 10,
+            "endOffset" : 14
+          },
+          "component" : "org.testng:testng:src/main/java/org/testng/Converter.java"
+        } ]
+      } ],
+      "fromHotspot" : true,
+      "organization" : "default"
+    }, {
+      "key" : "AV1GDmkZNAVDjyrgWoOm",
+      "component" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3027",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Put single-quotes around '.' to use the faster \"lastIndexOf(char)\" method.",
+      "line" : 62,
+      "hash" : "b714137ae2a2b3c85c26f756aeb68c7b",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "clumsy", "performance" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 62,
+        "endLine" : 62,
+        "startOffset" : 41,
+        "endOffset" : 44
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AV1GDmkZNAVDjyrgWoOp",
+      "component" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S106",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace this use of System.out or System.err by a logger.",
+      "line" : 79,
+      "hash" : "0ad4c528236f0ffac31cc1ad8bf3c6d7",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "bad-practice", "cert" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 79,
+        "endLine" : 79,
+        "startOffset" : 6,
+        "endOffset" : 16
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkZNAVDjyrgWoOq",
+      "component" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S106",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace this use of System.out or System.err by a logger.",
+      "line" : 88,
+      "hash" : "5145d348ad629aa745f475098674c566",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "bad-practice", "cert" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 88,
+        "endLine" : 88,
+        "startOffset" : 4,
+        "endOffset" : 14
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmkeNAVDjyrgWoOt",
+      "component" : "org.testng:testng:src/main/java/org/testng/DependencyMap.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_dependencies\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 17,
+      "hash" : "3802dcc9e2dc2c7918646ca0edb70a55",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 17,
+        "endLine" : 17,
+        "startOffset" : 46,
+        "endOffset" : 60
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmkeNAVDjyrgWoOu",
+      "component" : "org.testng:testng:src/main/java/org/testng/DependencyMap.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_groups\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 18,
+      "hash" : "074e2bc6087b0d365fa19c6d6222c8e6",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 18,
+        "endLine" : 18,
+        "startOffset" : 46,
+        "endOffset" : 54
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmkrNAVDjyrgWoPE",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1192",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Define a constant instead of duplicating this literal \"Directory\" 3 times.",
+      "line" : 33,
+      "hash" : "33ae6ea883151dd4d231ca3f5bb66173",
+      "author" : null,
+      "effort" : "8min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 33,
+        "endLine" : 33,
+        "startOffset" : 52,
+        "endOffset" : 63
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 33,
+            "endLine" : 33,
+            "startOffset" : 52,
+            "endOffset" : 63
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 36,
+            "endLine" : 36,
+            "startOffset" : 45,
+            "endOffset" : 56
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java"
+        } ]
+      }, {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 293,
+            "endLine" : 293,
+            "startOffset" : 15,
+            "endOffset" : 26
+          },
+          "msg" : "Duplication",
+          "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "8min"
+    }, {
+      "key" : "AWQuLb5ybXXTsx7OQZed",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1153",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Directly append the argument of String.valueOf().",
+      "line" : 107,
+      "hash" : "d33f5db347a6cf520018d00db96b6204",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "clumsy" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 107,
+        "endLine" : 107,
+        "startOffset" : 61,
+        "endOffset" : 85
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AV1GDmkrNAVDjyrgWoPJ",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1153",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Directly append the argument of String.valueOf().",
+      "line" : 110,
+      "hash" : "c393e772923e3d73f117e82c9731503e",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "clumsy" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 110,
+        "endLine" : 110,
+        "startOffset" : 63,
+        "endOffset" : 87
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AWQuLb5ybXXTsx7OQZee",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1153",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Directly append the argument of String.valueOf().",
+      "line" : 133,
+      "hash" : "bbeb0736a3cfeec37c35ed4039201454",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "clumsy" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 133,
+        "endLine" : 133,
+        "startOffset" : 60,
+        "endOffset" : 84
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AV1GDmksNAVDjyrgWoPL",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1153",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Directly append the argument of String.valueOf().",
+      "line" : 136,
+      "hash" : "0cfc1d3a77666eab768fe4a171727e43",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "clumsy" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 136,
+        "endLine" : 136,
+        "startOffset" : 62,
+        "endOffset" : 86
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AV1GDmkrNAVDjyrgWoPG",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1172",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this unused method parameter \"actual\".",
+      "line" : 245,
+      "hash" : "ab3d4dbdaee80793c988a3afd386fea6",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cert", "misra", "unused" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 245,
+        "endLine" : 245,
+        "startOffset" : 49,
+        "endOffset" : 55
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 245,
+            "endLine" : 245,
+            "startOffset" : 49,
+            "endOffset" : 55
+          },
+          "msg" : "Remove this unused method parameter actual\".",
+          "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AWQuLb5ybXXTsx7OQZec",
+      "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1172",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this unused method parameter \"actual\".",
+      "line" : 267,
+      "hash" : "fefc73b36924aa0605b9eb90a160d795",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "cert", "misra", "unused" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 267,
+        "endLine" : 267,
+        "startOffset" : 37,
+        "endOffset" : 43
+      },
+      "flows" : [ {
+        "locations" : [ {
+          "textRange" : {
+            "startLine" : 267,
+            "endLine" : 267,
+            "startOffset" : 37,
+            "endOffset" : 43
+          },
+          "msg" : "Remove this unused method parameter actual\".",
+          "component" : "org.testng:testng:src/main/java/org/testng/FileAssert.java"
+        } ]
+      } ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AW64U9QqYqsNRCNsynZd",
+      "component" : "org.testng:testng:src/main/java/org/testng/GuiceHelper.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1133",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Do not forget to remove this deprecated code someday.",
+      "line" : 30,
+      "hash" : "31089024a8a80b0bfa55a4929250f5d9",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2019-11-29T19:00:25+0100",
+      "updateDate" : "2019-11-29T19:00:25+0100",
+      "tags" : [ "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 30,
+        "endLine" : 30,
+        "startOffset" : 11,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AW64U9QqYqsNRCNsynZe",
+      "component" : "org.testng:testng:src/main/java/org/testng/GuiceHelper.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1133",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Do not forget to remove this deprecated code someday.",
+      "line" : 90,
+      "hash" : "c3656d4ef2cad48db7a1e2cbcded85b0",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2019-11-29T19:00:25+0100",
+      "updateDate" : "2019-11-29T19:00:25+0100",
+      "tags" : [ "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 90,
+        "endLine" : 90,
+        "startOffset" : 25,
+        "endOffset" : 39
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWQuLb9dbXXTsx7OQZe9",
+      "component" : "org.testng:testng:src/main/java/org/testng/IConfigurationListener2.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1133",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Do not forget to remove this deprecated code someday.",
+      "line" : 7,
+      "hash" : "c888a8c8cfc4849a11c81d1fc173aaaa",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 7,
+        "endLine" : 7,
+        "startOffset" : 17,
+        "endOffset" : 40
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AW3UsMHgdCq34vMxZfbW",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1128",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Remove this unused import 'org.testng.internal.ClassHelper'.",
+      "line" : 4,
+      "hash" : "18b46fba713dee28af8839b33f68cf28",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2019-10-16T14:20:03+0200",
+      "updateDate" : "2019-10-16T14:20:03+0200",
+      "tags" : [ "unused" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 4,
+        "endLine" : 4,
+        "startOffset" : 0,
+        "endOffset" : 39
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmg_NAVDjyrgWoHJ",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S2975",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "BLOCKER",
+      "message" : "Remove this \"clone\" implementation; use a copy constructor or copy factory instead.",
+      "line" : 158,
+      "hash" : "0fc0cc540261a94739e21c6a67ba5f71",
+      "author" : null,
+      "effort" : "30min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "suspicious" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 158,
+        "endLine" : 158,
+        "startOffset" : 16,
+        "endOffset" : 21
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "30min"
+    }, {
+      "key" : "AWcF1HoQW3Y69bz532Tm",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1133",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Do not forget to remove this deprecated code someday.",
+      "line" : 165,
+      "hash" : "017aa0867d839b1dfbb8fe69d343b462",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-11-12T03:49:26+0100",
+      "updateDate" : "2018-11-12T03:49:26+0100",
+      "tags" : [ "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 165,
+        "endLine" : 165,
+        "startOffset" : 17,
+        "endOffset" : 33
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWcF1HoQW3Y69bz532Tn",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1133",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Do not forget to remove this deprecated code someday.",
+      "line" : 172,
+      "hash" : "3bc53ae0c52f76f3e4041fe821d4e6d7",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-11-12T03:49:26+0100",
+      "updateDate" : "2018-11-12T03:49:26+0100",
+      "tags" : [ "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 172,
+        "endLine" : 172,
+        "startOffset" : 7,
+        "endOffset" : 23
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWcF1HoQW3Y69bz532To",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1874",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Remove this use of \"getRetryAnalyzer\"; it is deprecated.",
+      "line" : 175,
+      "hash" : "44e304d5779f956ac4fed73818ebe0e5",
+      "author" : null,
+      "effort" : "15min",
+      "creationDate" : "2018-11-12T03:49:26+0100",
+      "updateDate" : "2018-11-12T03:49:26+0100",
+      "tags" : [ "cert", "cwe", "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 175,
+        "endLine" : 175,
+        "startOffset" : 11,
+        "endOffset" : 27
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "15min"
+    }, {
+      "key" : "AW3UsMHgdCq34vMxZfbX",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1874",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Remove this use of \"setRetryAnalyzer\"; it is deprecated.",
+      "line" : 179,
+      "hash" : "aecbdf1d2a90cd34ea88061622f4e509",
+      "author" : null,
+      "effort" : "15min",
+      "creationDate" : "2019-10-16T14:20:03+0200",
+      "updateDate" : "2019-10-16T14:20:03+0200",
+      "tags" : [ "cert", "cwe", "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 179,
+        "endLine" : 179,
+        "startOffset" : 4,
+        "endOffset" : 20
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "15min"
+    }, {
+      "key" : "AWcF1HoQW3Y69bz532Tq",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1874",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Remove this use of \"getRetryAnalyzer\"; it is deprecated.",
+      "line" : 183,
+      "hash" : "ed27236b646fcc6e0e2b9ed3b1106c12",
+      "author" : null,
+      "effort" : "15min",
+      "creationDate" : "2018-11-12T03:49:26+0100",
+      "updateDate" : "2018-11-12T03:49:26+0100",
+      "tags" : [ "cert", "cwe", "obsolete" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 183,
+        "endLine" : 183,
+        "startOffset" : 11,
+        "endOffset" : 27
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "15min"
+    }, {
+      "key" : "AV1GDmhHNAVDjyrgWoHN",
+      "component" : "org.testng:testng:src/main/java/org/testng/ITestResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1214",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "CRITICAL",
+      "message" : "Move constants to a class or enum.",
+      "line" : 14,
+      "hash" : "5cd9de08bbdfb4ff38e36a557ad9ccf6",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "bad-practice" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 14,
+        "endLine" : 14,
+        "startOffset" : 17,
+        "endOffset" : 28
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWdkd3JvTX1JIqu7MlHj",
+      "component" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S5042",
+      "status" : "TO_REVIEW",
+      "resolution" : null,
+      "severity" : null,
+      "message" : "Make sure that expanding this archive file is safe here.",
+      "line" : 74,
+      "hash" : "b2ce44d69ff1e8743f6d12d5f2a8a5a3",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-06-10T22:17:30+0200",
+      "updateDate" : "2018-11-30T12:51:54+0100",
+      "tags" : [ "cert", "cwe" ],
+      "type" : "SECURITY_HOTSPOT",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 74,
+        "endLine" : 74,
+        "startOffset" : 22,
+        "endOffset" : 43
+      },
+      "flows" : [ ],
+      "fromHotspot" : true,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWCXCuZ1yrN5waWxgQ4j",
+      "component" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1751",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Remove this \"return\" statement or make it conditional.",
+      "line" : 104,
+      "hash" : "8a6c141756d58ae351cd56242e5f3361",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-12-27T09:14:38+0100",
+      "updateDate" : "2017-12-27T09:14:38+0100",
+      "tags" : [ "cert", "misra", "unused" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 104,
+        "endLine" : 104,
+        "startOffset" : 8,
+        "endOffset" : 14
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AWSR0-3Zl6vpliCecAQB",
+      "component" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S4042",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Use \"java.nio.Files#delete\" here for better messages on error conditions.",
+      "line" : 115,
+      "hash" : "ca4c90f95f15b2517fbb50d0260a64a0",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-07-13T06:07:23+0200",
+      "updateDate" : "2018-07-13T06:07:23+0200",
+      "tags" : [ "api-design", "error-handling" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 115,
+        "endLine" : 115,
+        "startOffset" : 11,
+        "endOffset" : 17
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWdkd3JvTX1JIqu7MlHk",
+      "component" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S5042",
+      "status" : "TO_REVIEW",
+      "resolution" : null,
+      "severity" : null,
+      "message" : "Make sure that expanding this archive file is safe here.",
+      "line" : 119,
+      "hash" : "465eb23f9bcc048dd68b03c2ac7d865e",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-06-10T22:17:30+0200",
+      "updateDate" : "2018-11-30T12:51:54+0100",
+      "tags" : [ "cert", "cwe" ],
+      "type" : "SECURITY_HOTSPOT",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 119,
+        "endLine" : 119,
+        "startOffset" : 38,
+        "endOffset" : 49
+      },
+      "flows" : [ ],
+      "fromHotspot" : true,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWdkd3JvTX1JIqu7MlHl",
+      "component" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S5042",
+      "status" : "TO_REVIEW",
+      "resolution" : null,
+      "severity" : null,
+      "message" : "Make sure that expanding this archive file is safe here.",
+      "line" : 123,
+      "hash" : "62deb3c18051b0d0a4de30ce36265799",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-06-10T22:17:30+0200",
+      "updateDate" : "2018-11-30T12:51:54+0100",
+      "tags" : [ "cert", "cwe" ],
+      "type" : "SECURITY_HOTSPOT",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 123,
+        "endLine" : 123,
+        "startOffset" : 37,
+        "endOffset" : 48
+      },
+      "flows" : [ ],
+      "fromHotspot" : true,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AWdkd3JvTX1JIqu7MlHm",
+      "component" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S5042",
+      "status" : "TO_REVIEW",
+      "resolution" : null,
+      "severity" : null,
+      "message" : "Make sure that expanding this archive file is safe here.",
+      "line" : 127,
+      "hash" : "de2111d332898da8faae5116fd5db4cc",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2018-06-10T22:17:30+0200",
+      "updateDate" : "2018-11-30T12:51:54+0100",
+      "tags" : [ "cert", "cwe" ],
+      "type" : "SECURITY_HOTSPOT",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 127,
+        "endLine" : 127,
+        "startOffset" : 43,
+        "endOffset" : 54
+      },
+      "flows" : [ ],
+      "fromHotspot" : true,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmhdNAVDjyrgWoHb",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1118",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Add a private constructor to hide the implicit public one.",
+      "line" : 27,
+      "hash" : "7e7e029dfedfcda9218d36d4ed583369",
+      "author" : null,
+      "effort" : "5min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2019-02-23T04:58:14+0100",
+      "tags" : [ "design" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 27,
+        "endLine" : 27,
+        "startOffset" : 13,
+        "endOffset" : 21
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "5min"
+    }, {
+      "key" : "AWzI7J6O4FjrqwOwCwxp",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S5164",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Call \"remove()\" on \"m_currentTestResult\".",
+      "line" : 31,
+      "hash" : "71a4ca3523e66642cad9ec1a1d615561",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2016-01-16T18:18:05+0100",
+      "updateDate" : "2019-08-25T15:15:32+0200",
+      "tags" : [ "leak", "performance" ],
+      "type" : "BUG",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 31,
+        "endLine" : 31,
+        "startOffset" : 42,
+        "endOffset" : 61
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHT",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3008",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_currentTestResult\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 31,
+      "hash" : "71a4ca3523e66642cad9ec1a1d615561",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 31,
+        "endLine" : 31,
+        "startOffset" : 42,
+        "endOffset" : 61
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhdNAVDjyrgWoHc",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1149",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace the synchronized class \"Vector\" by an unsynchronized one such as \"ArrayList\" or \"LinkedList\".",
+      "line" : 34,
+      "hash" : "87283a0cc83aaefa8a392ce4aa4db9b0",
+      "author" : null,
+      "effort" : "20min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "performance" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 34,
+        "endLine" : 34,
+        "startOffset" : 41,
+        "endOffset" : 55
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "20min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHU",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3008",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_output\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 34,
+      "hash" : "87283a0cc83aaefa8a392ce4aa4db9b0",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 34,
+        "endLine" : 34,
+        "startOffset" : 30,
+        "endOffset" : 38
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHV",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3008",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_methodOutputMap\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 37,
+      "hash" : "04da4699fd1ccd2cd867260044c2ea06",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 37,
+        "endLine" : 37,
+        "startOffset" : 45,
+        "endOffset" : 62
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHW",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3008",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_escapeHtml\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 39,
+      "hash" : "59825f0c2cdd8b2cc22a9520a5c8c35c",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 39,
+        "endLine" : 39,
+        "startOffset" : 25,
+        "endOffset" : 37
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHX",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S3008",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_orphanedOutput\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 42,
+      "hash" : "7061eacd4f33fde5b1199f4b3b5c55a1",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 42,
+        "endLine" : 42,
+        "startOffset" : 43,
+        "endOffset" : 59
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHY",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S106",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace this use of System.out or System.err by a logger.",
+      "line" : 123,
+      "hash" : "a70b9d2d0f2ff2e11f4a406950989fa7",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "bad-practice", "cert" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 123,
+        "endLine" : 123,
+        "startOffset" : 8,
+        "endOffset" : 18
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmhcNAVDjyrgWoHZ",
+      "component" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S106",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace this use of System.out or System.err by a logger.",
+      "line" : 138,
+      "hash" : "a70b9d2d0f2ff2e11f4a406950989fa7",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "bad-practice", "cert" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 138,
+        "endLine" : 138,
+        "startOffset" : 6,
+        "endOffset" : 16
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmhjNAVDjyrgWoHd",
+      "component" : "org.testng:testng:src/main/java/org/testng/ReporterConfig.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_className\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 19,
+      "hash" : "3f6e41c4c06d066cf049be67732faba5",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 19,
+        "endLine" : 19,
+        "startOffset" : 17,
+        "endOffset" : 28
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhjNAVDjyrgWoHe",
+      "component" : "org.testng:testng:src/main/java/org/testng/ReporterConfig.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_properties\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 22,
+      "hash" : "7e1ffde4427429501a7241e57ea42bb3",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 22,
+        "endLine" : 22,
+        "startOffset" : 31,
+        "endOffset" : 43
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "assignee" : "juherr@github",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhpNAVDjyrgWoHf",
+      "component" : "org.testng:testng:src/main/java/org/testng/SkipException.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1165",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Make this \"m_stackTrace\" field final.",
+      "line" : 14,
+      "hash" : "410d7fcb84df78e5e7ca5a5d0566e3b0",
+      "author" : null,
+      "effort" : "15min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "error-handling" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 14,
+        "endLine" : 14,
+        "startOffset" : 30,
+        "endOffset" : 42
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "15min"
+    }, {
+      "key" : "AV1GDmhqNAVDjyrgWoHh",
+      "component" : "org.testng:testng:src/main/java/org/testng/SkipException.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_stackTrace\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 14,
+      "hash" : "410d7fcb84df78e5e7ca5a5d0566e3b0",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 14,
+        "endLine" : 14,
+        "startOffset" : 30,
+        "endOffset" : 42
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhqNAVDjyrgWoHg",
+      "component" : "org.testng:testng:src/main/java/org/testng/SkipException.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1165",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Make this \"m_stackReduced\" field final.",
+      "line" : 15,
+      "hash" : "740a791b7b25de6a754d85d5f13855cf",
+      "author" : null,
+      "effort" : "15min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "error-handling" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 15,
+        "endLine" : 15,
+        "startOffset" : 27,
+        "endOffset" : 41
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "15min"
+    }, {
+      "key" : "AV1GDmhqNAVDjyrgWoHi",
+      "component" : "org.testng:testng:src/main/java/org/testng/SkipException.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_stackReduced\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 15,
+      "hash" : "740a791b7b25de6a754d85d5f13855cf",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 15,
+        "endLine" : 15,
+        "startOffset" : 27,
+        "endOffset" : 41
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhuNAVDjyrgWoHk",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1134",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Take the required action to fix the issue indicated by this comment.",
+      "line" : 11,
+      "hash" : "37b6f1526f3bdfbfb296a7c0da64e311",
+      "author" : null,
+      "effort" : null,
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cwe" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 11,
+        "endLine" : 11,
+        "startOffset" : 0,
+        "endOffset" : 41
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default"
+    }, {
+      "key" : "AV1GDmhvNAVDjyrgWoHl",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_propertyFileName\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 12,
+      "hash" : "eab7a9badf067d0e026fa44e968c09d0",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 12,
+        "endLine" : 12,
+        "startOffset" : 17,
+        "endOffset" : 35
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhvNAVDjyrgWoHn",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_suite\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 13,
+      "hash" : "863a31071cd715ffa27dbb06b99af720",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-08-08T06:09:42+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 13,
+        "endLine" : 13,
+        "startOffset" : 25,
+        "endOffset" : 32
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmhvNAVDjyrgWoHm",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_testContext\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 14,
+      "hash" : "a5a5774f6951db5809b3818462124745",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-08-08T06:09:42+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 14,
+        "endLine" : 14,
+        "startOffset" : 29,
+        "endOffset" : 42
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWP6f-youoX1TGVkDZI_",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1210",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Override \"equals(Object obj)\" to comply with the contract of the \"compareTo(T o)\" method.",
+      "line" : 38,
+      "hash" : "426097fe022e96db88c45221d6dfde75",
+      "author" : null,
+      "effort" : "15min",
+      "creationDate" : "2018-06-13T20:52:57+0200",
+      "updateDate" : "2018-06-13T20:52:57+0200",
+      "tags" : [ ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 38,
+        "endLine" : 38,
+        "startOffset" : 13,
+        "endOffset" : 22
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "15min"
+    }, {
+      "key" : "AV1GDmhwNAVDjyrgWoHo",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1148",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Use a logger to log this exception.",
+      "line" : 46,
+      "hash" : "fa31896ede321997dd0bc03a6e788f6c",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2019-07-17T22:08:00+0200",
+      "tags" : [ "error-handling" ],
+      "type" : "VULNERABILITY",
+      "comments" : [ {
+        "key" : "AWwBjH-BxaidzwjCuaS3",
+        "login" : "andres-triana65423",
+        "htmlText" : "Esta regla siempre se debe aplicar",
+        "markdown" : "Esta regla siempre se debe aplicar",
+        "updatable" : false,
+        "createdAt" : "2019-07-17T22:08:00+0200"
+      } ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 46,
+        "endLine" : 46,
+        "startOffset" : 9,
+        "endOffset" : 24
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmh0NAVDjyrgWoHp",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunState.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_hasFailures\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 11,
+      "hash" : "4e79aaf659cfc573dfc0375fea3213b7",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 11,
+        "endLine" : 11,
+        "startOffset" : 30,
+        "endOffset" : 43
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AWz4FDimQXD16eXDc_Rn",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "common-java:DuplicatedBlocks",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "2 duplicated blocks of code must be removed.",
+      "line" : null,
+      "hash" : null,
+      "author" : null,
+      "effort" : "30min",
+      "creationDate" : "2019-09-03T19:01:11+0200",
+      "updateDate" : "2019-09-03T19:01:11+0200",
+      "tags" : [ "pitfall" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : null,
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "30min"
+    }, {
+      "key" : "AWQuLb93bXXTsx7OQZfC",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S107",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Constructor has 11 parameters, which is greater than 7 authorized.",
+      "line" : 101,
+      "hash" : "073ffeda368528e2f02b471a385527d1",
+      "author" : null,
+      "effort" : "20min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "brain-overload" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 101,
+        "endLine" : 101,
+        "startOffset" : 12,
+        "endOffset" : 23
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "20min"
+    }, {
+      "key" : "AWQuLb93bXXTsx7OQZfD",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S107",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Method has 11 parameters, which is greater than 7 authorized.",
+      "line" : 126,
+      "hash" : "459e78d2748eec91ebb4acfb166d860d",
+      "author" : null,
+      "effort" : "20min",
+      "creationDate" : "2018-06-23T21:43:14+0200",
+      "updateDate" : "2018-06-23T21:43:14+0200",
+      "tags" : [ "brain-overload" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 126,
+        "endLine" : 126,
+        "startOffset" : 15,
+        "endOffset" : 19
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "20min"
+    }, {
+      "key" : "AV1GDmk8NAVDjyrgWoPQ",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1135",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Complete the task associated to this TODO comment.",
+      "line" : 302,
+      "hash" : "a0276ba718dd7e0a90db46548f63ebd1",
+      "author" : null,
+      "effort" : null,
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cwe" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 302,
+        "endLine" : 302,
+        "startOffset" : 0,
+        "endOffset" : 80
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default"
+    }, {
+      "key" : "AV1GDmk8NAVDjyrgWoPS",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1134",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Take the required action to fix the issue indicated by this comment.",
+      "line" : 486,
+      "hash" : "7bf1a48c51498ebf7ee66ea2a4a22c4e",
+      "author" : null,
+      "effort" : null,
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cwe" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 486,
+        "endLine" : 486,
+        "startOffset" : 0,
+        "endOffset" : 30
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default"
+    }, {
+      "key" : "AV1GDmk8NAVDjyrgWoPO",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S106",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MAJOR",
+      "message" : "Replace this use of System.out or System.err by a logger.",
+      "line" : 554,
+      "hash" : "e7c5f95208eff81059277e9e1aa41e2c",
+      "author" : null,
+      "effort" : "10min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "bad-practice", "cert" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 554,
+        "endLine" : 554,
+        "startOffset" : 4,
+        "endOffset" : 14
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "10min"
+    }, {
+      "key" : "AV1GDmk8NAVDjyrgWoPR",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S1135",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "INFO",
+      "message" : "Complete the task associated to this TODO comment.",
+      "line" : 623,
+      "hash" : "3b383eb43ef7e29147bd91bde8af3975",
+      "author" : null,
+      "effort" : null,
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "cwe" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 623,
+        "endLine" : 623,
+        "startOffset" : 0,
+        "endOffset" : 77
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default"
+    }, {
+      "key" : "AV1GDmh5NAVDjyrgWoHv",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunnerWorker.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_suiteRunner\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 24,
+      "hash" : "0097835f6d68897ae4ec1e17a4ab8242",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 24,
+        "endLine" : 24,
+        "startOffset" : 22,
+        "endOffset" : 35
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    }, {
+      "key" : "AV1GDmh5NAVDjyrgWoHw",
+      "component" : "org.testng:testng:src/main/java/org/testng/SuiteRunnerWorker.java",
+      "project" : "org.testng:testng",
+      "rule" : "java:S116",
+      "status" : "OPEN",
+      "resolution" : null,
+      "severity" : "MINOR",
+      "message" : "Rename this field \"m_verbose\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "line" : 25,
+      "hash" : "ed96a358d57abcc35834eae4a9e6f6c2",
+      "author" : null,
+      "effort" : "2min",
+      "creationDate" : "2017-07-15T13:39:53+0200",
+      "updateDate" : "2017-07-15T13:39:53+0200",
+      "tags" : [ "convention" ],
+      "type" : "CODE_SMELL",
+      "comments" : [ ],
+      "attr" : null,
+      "transitions" : [ ],
+      "actions" : [ ],
+      "textRange" : {
+        "startLine" : 25,
+        "endLine" : 25,
+        "startOffset" : 18,
+        "endOffset" : 27
+      },
+      "flows" : [ ],
+      "fromHotspot" : false,
+      "organization" : "default",
+      "debt" : "2min"
+    } ],
+    "components" : [ {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/CommandLineArgs.java",
+      "name" : "CommandLineArgs.java",
+      "path" : "CommandLineArgs.java",
+      "qualifier" : "FIL",
+      "uuid" : "2842e652-9560-4125-b3a8-7329cf23ee07",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/CommandLineArgs.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/SkipException.java",
+      "name" : "SkipException.java",
+      "path" : "SkipException.java",
+      "qualifier" : "FIL",
+      "uuid" : "d8d57018-11e0-4533-889d-46c021b74f3f",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/SkipException.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/Reporter.java",
+      "name" : "Reporter.java",
+      "path" : "Reporter.java",
+      "qualifier" : "FIL",
+      "uuid" : "a2784dc3-d91f-4cbc-b7bf-115ec0b6caec",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/Reporter.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/SuiteRunnerWorker.java",
+      "name" : "SuiteRunnerWorker.java",
+      "path" : "SuiteRunnerWorker.java",
+      "qualifier" : "FIL",
+      "uuid" : "c414f7f7-2327-413a-a8fa-556fbd072de8",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/SuiteRunnerWorker.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng",
+      "name" : "testng",
+      "path" : "testng",
+      "qualifier" : "TRK",
+      "uuid" : "3bfc5973-13be-4784-b59f-c650d118898b",
+      "enabled" : true,
+      "longName" : "testng"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/Assert.java",
+      "name" : "Assert.java",
+      "path" : "Assert.java",
+      "qualifier" : "FIL",
+      "uuid" : "72939998-f3d9-462e-8352-0b6dae76d60c",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/Assert.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/ITestResult.java",
+      "name" : "ITestResult.java",
+      "path" : "ITestResult.java",
+      "qualifier" : "FIL",
+      "uuid" : "401b8637-a5fe-45eb-b740-6b44ab6edb24",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/ITestResult.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/SuiteRunner.java",
+      "name" : "SuiteRunner.java",
+      "path" : "SuiteRunner.java",
+      "qualifier" : "FIL",
+      "uuid" : "7303b11b-b2c1-45d7-953b-b2655f23c85f",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/SuiteRunner.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/ClassMethodMap.java",
+      "name" : "ClassMethodMap.java",
+      "path" : "ClassMethodMap.java",
+      "qualifier" : "FIL",
+      "uuid" : "4196aba9-1c19-437d-87bf-161c36a32aa5",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/ClassMethodMap.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/JarFileUtils.java",
+      "name" : "JarFileUtils.java",
+      "path" : "JarFileUtils.java",
+      "qualifier" : "FIL",
+      "uuid" : "AV-Zv6P9VLHgQ8g18VhF",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/JarFileUtils.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/ConversionUtils.java",
+      "name" : "ConversionUtils.java",
+      "path" : "ConversionUtils.java",
+      "qualifier" : "FIL",
+      "uuid" : "7d711c7d-5dd0-4619-bdc8-270abee50088",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/ConversionUtils.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/GuiceHelper.java",
+      "name" : "GuiceHelper.java",
+      "path" : "GuiceHelper.java",
+      "qualifier" : "FIL",
+      "uuid" : "AV--Bg1P0ZS4AMhlxj5G",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/GuiceHelper.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/IConfigurationListener2.java",
+      "name" : "IConfigurationListener2.java",
+      "path" : "IConfigurationListener2.java",
+      "qualifier" : "FIL",
+      "uuid" : "9e952934-c092-482e-9551-ba3c4f1cdcf0",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/IConfigurationListener2.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/DependencyMap.java",
+      "name" : "DependencyMap.java",
+      "path" : "DependencyMap.java",
+      "qualifier" : "FIL",
+      "uuid" : "0614fb33-9985-4f64-a2fa-8054dcf4f3ad",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/DependencyMap.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/Converter.java",
+      "name" : "Converter.java",
+      "path" : "Converter.java",
+      "qualifier" : "FIL",
+      "uuid" : "49ddf051-c00e-4f68-86b9-5aa76ab4593e",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/Converter.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/AssertJUnit.java",
+      "name" : "AssertJUnit.java",
+      "path" : "AssertJUnit.java",
+      "qualifier" : "FIL",
+      "uuid" : "5c7fac54-a057-4a0a-a53a-873b77605763",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/AssertJUnit.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/ReporterConfig.java",
+      "name" : "ReporterConfig.java",
+      "path" : "ReporterConfig.java",
+      "qualifier" : "FIL",
+      "uuid" : "e452d5b5-19c5-4160-9c81-bb3dd1fddf7f",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/ReporterConfig.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/SuiteResult.java",
+      "name" : "SuiteResult.java",
+      "path" : "SuiteResult.java",
+      "qualifier" : "FIL",
+      "uuid" : "380e7d48-4d42-44a2-a2d3-6b0ba18da34a",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/SuiteResult.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/ITestNGMethod.java",
+      "name" : "ITestNGMethod.java",
+      "path" : "ITestNGMethod.java",
+      "qualifier" : "FIL",
+      "uuid" : "61ff6abc-0f06-4436-ac7a-a4220d12b096",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/ITestNGMethod.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/SuiteRunState.java",
+      "name" : "SuiteRunState.java",
+      "path" : "SuiteRunState.java",
+      "qualifier" : "FIL",
+      "uuid" : "6e01b2be-07c0-468f-9d7f-3bd1c6559e53",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/SuiteRunState.java"
+    }, {
+      "organization" : "default",
+      "key" : "org.testng:testng:src/main/java/org/testng/FileAssert.java",
+      "name" : "FileAssert.java",
+      "path" : "FileAssert.java",
+      "qualifier" : "FIL",
+      "uuid" : "42af10a9-90cf-4ff1-9ad7-21a74181c0bb",
+      "enabled" : true,
+      "longName" : "src/main/java/org/testng/FileAssert.java"
+    } ],
+    "rules" : [ {
+      "key" : "java:S1751",
+      "name" : "Loops with at most one iteration should be refactored",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S5042",
+      "name" : "Expanding archive files is security-sensitive",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1192",
+      "name" : "String literals should not be duplicated",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S117",
+      "name" : "Local variable and method parameter names should comply with a naming convention",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S106",
+      "name" : "Standard outputs should not be used directly to log anything",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S107",
+      "name" : "Methods should not have too many parameters",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1845",
+      "name" : "Methods and field names should not be the same or differ only by capitalization",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S5164",
+      "name" : "\"ThreadLocal\" variables should be cleaned up when no longer used",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S4838",
+      "name" : "An iteration on a Collection should be performed on the type handled by the Collection",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S4823",
+      "name" : "Using command line arguments is security-sensitive",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1210",
+      "name" : "\"equals(Object obj)\" should be overridden along with the \"compareTo(T obj)\" method",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1214",
+      "name" : "Constants should not be defined in interfaces",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S2975",
+      "name" : "\"clone\" should not be overridden",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1165",
+      "name" : "Exception classes should be immutable",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1153",
+      "name" : "String.valueOf() should not be appended to a String",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S3008",
+      "name" : "Static non-final field names should comply with a naming convention",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1172",
+      "name" : "Unused method parameters should be removed",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1118",
+      "name" : "Utility classes should not have public constructors",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S3776",
+      "name" : "Cognitive Complexity of methods should not be too high",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1149",
+      "name" : "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1135",
+      "name" : "Track uses of \"TODO\" tags",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S2589",
+      "name" : "Boolean expressions should not be gratuitous",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1148",
+      "name" : "Throwable.printStackTrace(...) should not be called",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1874",
+      "name" : "\"@Deprecated\" code should not be used",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1128",
+      "name" : "Unnecessary imports should be removed",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1134",
+      "name" : "Track uses of \"FIXME\" tags",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S4042",
+      "name" : "\"java.nio.Files#delete\" should be preferred",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S112",
+      "name" : "Generic exceptions should never be thrown",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "common-java:DuplicatedBlocks",
+      "name" : "Source files should not have any duplicated blocks",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1155",
+      "name" : "Collection.isEmpty() should be used to test for emptiness",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S3027",
+      "name" : "String function use should be optimized for single characters",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1133",
+      "name" : "Deprecated code should be removed",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S1940",
+      "name" : "Boolean checks should not be inverted",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S3824",
+      "name" : "\"Map.get\" and value test should be replaced with single method call",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    }, {
+      "key" : "java:S116",
+      "name" : "Field names should comply with a naming convention",
+      "status" : "READY",
+      "lang" : "java",
+      "langName" : "Java"
+    } ],
+    "users" : [ {
+      "login" : "krmahadevan@github",
+      "name" : "Krishnan Mahadevan",
+      "active" : true,
+      "avatar" : "24e96b71ca38f92524bd4ec5b7703c39"
+    }, {
+      "login" : "andres-triana65423",
+      "name" : "Andres Triana",
+      "active" : true,
+      "avatar" : "82f4c57cccdcd36addd3519b54b0be06"
+    }, {
+      "login" : "juherr@github",
+      "name" : "Julien Herr",
+      "active" : true,
+      "avatar" : "a6ba4b035c749d8a0bee17a13202dcaf"
+    } ],
+    "p" : 1,
+    "total" : 1544,
+    "ps" : 100,
+    "languages" : [ {
+      "key" : "css",
+      "name" : "CSS"
+    }, {
+      "key" : "plsql",
+      "name" : "PL/SQL"
+    }, {
+      "key" : "scala",
+      "name" : "Scala"
+    }, {
+      "key" : "cs",
+      "name" : "C#"
+    }, {
+      "key" : "java",
+      "name" : "Java"
+    }, {
+      "key" : "web",
+      "name" : "HTML"
+    }, {
+      "key" : "jsp",
+      "name" : "JSP"
+    }, {
+      "key" : "flex",
+      "name" : "Flex"
+    }, {
+      "key" : "xml",
+      "name" : "XML"
+    }, {
+      "key" : "vbnet",
+      "name" : "VB.NET"
+    }, {
+      "key" : "swift",
+      "name" : "Swift"
+    }, {
+      "key" : "py",
+      "name" : "Python"
+    }, {
+      "key" : "c",
+      "name" : "C"
+    }, {
+      "key" : "cpp",
+      "name" : "C++"
+    }, {
+      "key" : "objc",
+      "name" : "Objective-C"
+    }, {
+      "key" : "go",
+      "name" : "Go"
+    }, {
+      "key" : "kotlin",
+      "name" : "Kotlin"
+    }, {
+      "key" : "tsql",
+      "name" : "T-SQL"
+    }, {
+      "key" : "apex",
+      "name" : "Apex"
+    }, {
+      "key" : "js",
+      "name" : "JavaScript"
+    }, {
+      "key" : "ts",
+      "name" : "TypeScript"
+    }, {
+      "key" : "ruby",
+      "name" : "Ruby"
+    }, {
+      "key" : "cobol",
+      "name" : "COBOL"
+    }, {
+      "key" : "php",
+      "name" : "PHP"
+    }, {
+      "key" : "abap",
+      "name" : "ABAP"
+    } ],
+    "effortTotal" : 10479,
+    "organizations" : [ {
+      "key" : "default",
+      "name" : "Attic"
+    } ],
+    "debtTotal" : 10479,
+    "facets" : [ ]
+  }
+}

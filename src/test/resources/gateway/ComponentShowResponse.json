@@ -1,0 +1,14 @@
+{
+    "component": {
+        "organization": "default",
+        "key": "org.testng:testng",
+        "name": "testng",
+        "qualifier": "TRK",
+        "analysisDate": "2019-09-03T19:01:11+0200",
+        "tags": [],
+        "visibility": "public",
+        "leakPeriodDate": "2019-08-05T05:53:50+0200",
+        "version": "7.0.1-SNAPSHOT"
+    },
+    "ancestors": []
+}

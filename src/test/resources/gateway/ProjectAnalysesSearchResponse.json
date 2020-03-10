@@ -1,0 +1,697 @@
+{
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 48
+    },
+    "analyses": [
+        {
+            "key": "AWz4FAjnQXD16eXDc_RW",
+            "date": "2019-09-03T19:01:11+0200",
+            "events": [
+                {
+                    "key": "AWz4FI64QXD16eXDdLGz",
+                    "category": "VERSION",
+                    "name": "7.0.1-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "7.0.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "3b6cd4b94069e67126076e60212f9c3a212e8bdd"
+        },
+        {
+            "key": "AWzsp7VOaHQUkZX5fcYE",
+            "date": "2019-09-01T13:46:59+0200",
+            "events": [],
+            "projectVersion": "7.0.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "a485be6e4d0920df1293bb7f1c6d2054a433cdbc"
+        },
+        {
+            "key": "AWzlsghiaHQUkZX5w4eZ",
+            "date": "2019-08-31T05:20:37+0200",
+            "events": [],
+            "projectVersion": "7.0.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "ae035ffb41e535d9aad7212daccdd8655e228346"
+        },
+        {
+            "key": "AWzI7IHQ4FjrqwOwCwxa",
+            "date": "2019-08-25T15:15:32+0200",
+            "events": [
+                {
+                    "key": "AWzI7OZi4FjrqwOwC8kp",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80, Duplicated Lines on New Code > 3"
+                },
+                {
+                    "key": "AWzI7OZi4FjrqwOwC8ko",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                },
+                {
+                    "key": "AWzI7OZi4FjrqwOwC8kn",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (HTML)"
+                }
+            ],
+            "projectVersion": "7.0.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "f5da2b323b062a069b8a8212c1ec4546dc068d70"
+        },
+        {
+            "key": "AWyuFakeVUCcZopkWs5P",
+            "date": "2019-08-20T10:10:56+0200",
+            "events": [
+                {
+                    "key": "AWyuFiSmVUCcZopkW42J",
+                    "category": "VERSION",
+                    "name": "7.0.0-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "1096ea69002160bf35fcc4f2ad315b4f337aae5a"
+        },
+        {
+            "key": "AWyuALtg2Hur5iaK88jA",
+            "date": "2019-08-20T09:47:57+0200",
+            "events": [
+                {
+                    "key": "AWyuAVy62Hur5iaK9If4",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "08d82fe1ea1e8e024b33d15b8032b0334e0bd188"
+        },
+        {
+            "key": "AWybvLNk5ULuzyOxUhX9",
+            "date": "2019-08-16T20:40:37+0200",
+            "events": [
+                {
+                    "key": "AWybvUyo5ULuzyOxUtUd",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "207a8d82df85db671e9e430db3d27d805b5b08e8"
+        },
+        {
+            "key": "AWxf6uTGVUCcZopke8Pu",
+            "date": "2019-08-05T05:53:50+0200",
+            "events": [
+                {
+                    "key": "AWxf62DUVUCcZopkfIMk",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "4047b03c828a6dac22a8a16f931adfefbf0591b3"
+        },
+        {
+            "key": "AWvxqjKkXAZRXVHnu8EZ",
+            "date": "2019-07-14T20:05:06+0200",
+            "events": [
+                {
+                    "key": "AWvxqq2YXAZRXVHnvIBM",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Duplicated Lines on New Code > 3"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "da1fa33175f7248d01a3c775903c15ba421982d3"
+        },
+        {
+            "key": "AWu8JM5ksqgB1tQdLb1w",
+            "date": "2019-07-04T10:39:12+0200",
+            "events": [
+                {
+                    "key": "AWu8JVzwsqgB1tQdLnwv",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "50f15c3dfd13c289fd33eca62a7936830a88f1a9"
+        },
+        {
+            "key": "AWsfzepfeUB2ESsS333m",
+            "date": "2019-06-04T02:03:38+0200",
+            "events": [
+                {
+                    "key": "AWsfzi8-eUB2ESsS4D3t",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "1ff4e019b5ef4b7af8d691a19d96ef2b520c7ed1"
+        },
+        {
+            "key": "AWsfyaZm0HvBLU3pctlp",
+            "date": "2019-06-04T01:59:01+0200",
+            "events": [
+                {
+                    "key": "AWsfyiO70HvBLU3pc5jE",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Duplicated Lines on New Code > 3"
+                },
+                {
+                    "key": "AWsfyiO70HvBLU3pc5jD",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "e394dbe74d0918bea7ee0ed1c1b1581ab2f8a65b"
+        },
+        {
+            "key": "AWsHxZcZttLVpoKm8LQB",
+            "date": "2019-05-30T10:03:42+0200",
+            "events": [],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "969aa379d818f9ec78be1b495ec91d5878c16312"
+        },
+        {
+            "key": "AWozvwBN-aLJxVkBus6W",
+            "date": "2019-04-19T05:57:00+0200",
+            "events": [
+                {
+                    "key": "AWozv2jj-aLJxVkBu4sg",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "32eb5baec47d75af63adf401f412306e8293cb11"
+        },
+        {
+            "key": "AWnFfOuK1RFg2HZQL8SG",
+            "date": "2019-03-28T19:06:41+0100",
+            "events": [
+                {
+                    "key": "AWnFfVta1RFg2HZQMIcX",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                },
+                {
+                    "key": "AWnFfVta1RFg2HZQMIcW",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "842f81d13747d15a1321439c89a16252de49d86d"
+        },
+        {
+            "key": "AWkYglEMV9myJaMx2q3o",
+            "date": "2019-02-23T04:58:14+0100",
+            "events": [
+                {
+                    "key": "AWkYgv3qV9myJaMx226u",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "0fec82797da00f0c4e2edfe321771412b8431743"
+        },
+        {
+            "key": "AWijEmYafes3vDILOkDF",
+            "date": "2019-01-31T09:40:21+0100",
+            "events": [
+                {
+                    "key": "AWijEwsnfes3vDILOv_4",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (XML)"
+                },
+                {
+                    "key": "AWijEwsnfes3vDILOv_3",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80"
+                },
+                {
+                    "key": "AWijEwsnfes3vDILOv_2",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false,
+            "revision": "5b75bcec4f88cbc328388e3ebdae5491d52edc8f"
+        },
+        {
+            "key": "AWf56ABTrt4Kct_4KYbW",
+            "date": "2018-12-29T13:18:17+0100",
+            "events": [],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWdkd2gUTX1JIqu7MlHf",
+            "date": "2018-11-30T12:51:54+0100",
+            "events": [
+                {
+                    "key": "AWdkeAmHTX1JIqu7Mwq3",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                },
+                {
+                    "key": "AWdkeAmHTX1JIqu7Mwq2",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWcnIRPzkEeD8QRkZEyI",
+            "date": "2018-11-18T15:00:33+0100",
+            "events": [
+                {
+                    "key": "AWcnIZZfkEeD8QRkZQPm",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWa7iQLfSgN4uCclChKC",
+            "date": "2018-10-28T17:34:59+0100",
+            "events": [
+                {
+                    "key": "AWa7iXJZSgN4uCclChKT",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80 null, Duplicated Lines on New Code (%) > 3 null"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWWkrSbefnKVigJDXMv-",
+            "date": "2018-09-04T15:00:40+0200",
+            "events": [
+                {
+                    "key": "AWWkrYTkfnKVigJDXMzn",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWVqAoimelKyZq-p5l4w",
+            "date": "2018-08-24T05:36:21+0200",
+            "events": [
+                {
+                    "key": "AWVqA5chelKyZq-p5l57",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80 null"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWVLOOEU2xJdnw6QczTg",
+            "date": "2018-08-18T06:07:14+0200",
+            "events": [
+                {
+                    "key": "AWVLOVZf2xJdnw6QczUZ",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWUd8wI3opYCBC6oii60",
+            "date": "2018-08-09T11:08:06+0200",
+            "events": [
+                {
+                    "key": "AWUd89C8opYCBC6oijyW",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80 null"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWUd3VrWopYCBC6oiUhW",
+            "date": "2018-08-09T10:44:14+0200",
+            "events": [
+                {
+                    "key": "AWUd346KopYCBC6oiUln",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWTSlQJhNa94hQNv6blr",
+            "date": "2018-07-25T19:54:07+0200",
+            "events": [],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWPrW2ek3e-qcckjxTkt",
+            "date": "2018-06-10T22:18:54+0200",
+            "events": [
+                {
+                    "key": "AWPrW7Nw3e-qcckjxTlZ",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80 null"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWPrWg5euoX1TGVk2SaR",
+            "date": "2018-06-10T22:17:30+0200",
+            "events": [
+                {
+                    "key": "AWPrWoI7uoX1TGVk2TlE",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Web)"
+                }
+            ],
+            "projectVersion": "7.0.0-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWFUu940HzT_nQocPQOG",
+            "date": "2018-02-02T05:16:03+0100",
+            "events": [
+                {
+                    "key": "AWFUvEI_HzT_nQocPQUb",
+                    "category": "VERSION",
+                    "name": "6.14-SNAPSHOT"
+                },
+                {
+                    "key": "AWFUvEIoHzT_nQocPQUa",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Stop using 'Sonar way' (JavaScript)"
+                }
+            ],
+            "projectVersion": "6.14-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWDe3SGmAe66J1GVRblO",
+            "date": "2018-01-10T07:57:10+0100",
+            "events": [
+                {
+                    "key": "AWDe3cX0Ae66J1GVRblV",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "6.14-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWCjZHnoEsHmkfbCyxnA",
+            "date": "2017-12-29T18:47:41+0100",
+            "events": [
+                {
+                    "key": "AWCjZXdYEsHmkfbCyxoQ",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "6.14-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWCRaiDNEsHmkfbCuPfB",
+            "date": "2017-12-26T07:00:46+0100",
+            "events": [
+                {
+                    "key": "AWCRapD8EsHmkfbCuPfs",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (JavaScript)"
+                }
+            ],
+            "projectVersion": "6.14-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AWALQUl90ZS4AMhl5Hn1",
+            "date": "2017-11-30T05:47:08+0100",
+            "events": [
+                {
+                    "key": "AWALQas40ZS4AMhl5Hn7",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Reliability Rating on New Code > 1 null"
+                }
+            ],
+            "projectVersion": "6.14-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AV_6B6xQ0ZS4AMhl3yc3",
+            "date": "2017-11-26T21:30:32+0100",
+            "events": [
+                {
+                    "key": "AV_6B-JS0ZS4AMhl3yc4",
+                    "category": "VERSION",
+                    "name": "6.13-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.13-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AV--Bg0D0ZS4AMhlxj5F",
+            "date": "2017-11-15T05:51:45+0100",
+            "events": [
+                {
+                    "key": "AV--BkXA0ZS4AMhlxj52",
+                    "category": "VERSION",
+                    "name": "6.11.1-SNAPSHOT"
+                },
+                {
+                    "key": "AV--BkWl0ZS4AMhlxj51",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (JavaScript)"
+                }
+            ],
+            "projectVersion": "6.11.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AV-Zv6PdVLHgQ8g18VhE",
+            "date": "2017-11-08T04:48:15+0100",
+            "events": [
+                {
+                    "key": "AV-ZwB1VVLHgQ8g18VhK",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "6.11.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AV8JvyCYNjpKv9tuYsY7",
+            "date": "2017-10-11T06:42:42+0200",
+            "events": [
+                {
+                    "key": "AV8Jv5fdNjpKv9tuYsZF",
+                    "category": "QUALITY_GATE",
+                    "name": "Red (was Green)",
+                    "description": "Coverage on New Code < 80 over 30 days (2017 Sep 13)"
+                }
+            ],
+            "projectVersion": "6.11.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AV7_SBvrNjpKv9tuYAsT",
+            "date": "2017-10-09T05:56:21+0200",
+            "events": [
+                {
+                    "key": "AV7_SHo5NjpKv9tuYAsW",
+                    "category": "QUALITY_GATE",
+                    "name": "Green (was Red)",
+                    "description": ""
+                }
+            ],
+            "projectVersion": "6.11.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AV6QuDSOI7opDV7vcYQO",
+            "date": "2017-09-17T18:41:04+0200",
+            "events": [
+                {
+                    "key": "AV6QuH1ZI7opDV7vcYQZ",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "6.11.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVp2QpKvGqtTGnUlGgf5",
+            "date": "2017-02-25T18:11:27+0100",
+            "events": [
+                {
+                    "key": "AVqFDlgXZpzp6YfOff5v",
+                    "category": "VERSION",
+                    "name": "6.10.1-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.10.1-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVcQvA9HzjiM7eGZNLnz",
+            "date": "2016-09-09T22:53:34+0200",
+            "events": [
+                {
+                    "key": "AVqFDlIPZpzp6YfOfbJu",
+                    "category": "VERSION",
+                    "name": "6.9.13-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.9.13-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVYxAP0-qNWmr_fpZG2L",
+            "date": "2016-03-31T10:27:53+0200",
+            "events": [
+                {
+                    "key": "AVqFDlIOZpzp6YfOfbJE",
+                    "category": "VERSION",
+                    "name": " 6.9.12-SNAPSHOT"
+                },
+                {
+                    "key": "AVqFDlMpZpzp6YfOfb-Y",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "6.9.12-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVYxAP0-qNWmr_fpZG2U",
+            "date": "2015-12-17T10:31:48+0100",
+            "events": [
+                {
+                    "key": "AVqFDlOpZpzp6YfOfcHV",
+                    "category": "VERSION",
+                    "name": "6.9.11-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.9.11-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVYxAP0-qNWmr_fpZG2V",
+            "date": "2015-10-26T10:26:54+0100",
+            "events": [
+                {
+                    "key": "AVqFDlY8Zpzp6YfOfeEH",
+                    "category": "VERSION",
+                    "name": "6.9.10-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.9.10-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVYxAWtlqNWmr_fpaAe0",
+            "date": "2015-10-12T10:27:13+0200",
+            "events": [
+                {
+                    "key": "AVqFDlIPZpzp6YfOfbJb",
+                    "category": "VERSION",
+                    "name": "6.9.9-SNAPSHOT"
+                },
+                {
+                    "key": "AVqFDlT9Zpzp6YfOfc5i",
+                    "category": "QUALITY_PROFILE",
+                    "name": "Changes in 'Sonar way' (Java)"
+                }
+            ],
+            "projectVersion": "6.9.9-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVYxAP0-qNWmr_fpZG2X",
+            "date": "2015-08-02T10:31:17+0200",
+            "events": [
+                {
+                    "key": "AVqFDlWnZpzp6YfOfdgW",
+                    "category": "VERSION",
+                    "name": "6.9.7-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.9.7-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        },
+        {
+            "key": "AVYxAUHWqNWmr_fpZlJC",
+            "date": "2015-05-09T10:29:03+0200",
+            "events": [
+                {
+                    "key": "AVqFDlK1Zpzp6YfOfbk4",
+                    "category": "VERSION",
+                    "name": "6.9.5-SNAPSHOT"
+                }
+            ],
+            "projectVersion": "6.9.5-SNAPSHOT",
+            "manualNewCodePeriodBaseline": false
+        }
+    ]
+}
