@@ -1,5 +1,6 @@
-package com.github.sansp00.maven.sonarqube.model;
+package com.github.sansp00.maven.sonarqube.gateway.model;
 
+import static pl.pojo.tester.api.FieldPredicate.exclude;
 import static pl.pojo.tester.api.assertion.Assertions.assertPojoMethodsFor;
 import static pl.pojo.tester.api.assertion.Method.CONSTRUCTOR;
 import static pl.pojo.tester.api.assertion.Method.EQUALS;
@@ -10,16 +11,16 @@ import static pl.pojo.tester.api.assertion.Method.TO_STRING;
 
 import org.junit.Test;
 
-public class LeakMeasureTest {
+public class IssueTest {
 	@Test
 	public void testPojo() {
 		// Arrange
-		final Class<?> classUnderTest = HistoryMeasures.class;
+		final Class<?> classUnderTest = Issue.class;
 
 		// Act
 
 		// Assert
-		assertPojoMethodsFor(classUnderTest) //
+		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

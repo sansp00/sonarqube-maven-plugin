@@ -47,7 +47,7 @@ public class SonarQubeProjectAnalysesGatewayClient {
 				.queryParam(PROJECT_KEY, projectKey);
 
 		// Optional params
-		if (category != Category.UNDEFINED) {
+		if (category != null && category != Category.UNDEFINED) {
 			webTarget = webTarget.queryParam(EVENT_CATEGORY, category.getCode());
 		}
 
@@ -90,8 +90,6 @@ public class SonarQubeProjectAnalysesGatewayClient {
 
 		@Override
 		public int compare(Analysis left, Analysis right) {
-//			final LocalDateTime leftDate = dateTimeConverter.toLocalDateTime(left.getDate());
-//			final LocalDateTime rightDate = dateTimeConverter.toLocalDateTime(right.getDate());
 			return left.getDate().compareTo(right.getDate());
 		}
 

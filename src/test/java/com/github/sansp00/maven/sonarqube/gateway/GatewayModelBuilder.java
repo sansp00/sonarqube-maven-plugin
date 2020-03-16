@@ -7,6 +7,8 @@ import java.util.List;
 import com.github.sansp00.maven.sonarqube.gateway.model.Analysis;
 import com.github.sansp00.maven.sonarqube.gateway.model.Category;
 import com.github.sansp00.maven.sonarqube.gateway.model.Component;
+import com.github.sansp00.maven.sonarqube.gateway.model.ComponentSearchResponse;
+import com.github.sansp00.maven.sonarqube.gateway.model.ComponentShowResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.Event;
 import com.github.sansp00.maven.sonarqube.gateway.model.History;
 import com.github.sansp00.maven.sonarqube.gateway.model.Measure;
@@ -30,6 +32,8 @@ public class GatewayModelBuilder {
 	public static final String COMPONENT_KEY = "com.github.sonarqube:master";
 	public static final String COMPONENT_NAME = "SonarQube Maven Client";
 	public static final String COMPONENT_BRANCH = "master";
+	
+	public static final String KEYWORD = "keyword";
 
 	public static final String PROJECT_ORGANISATION = "Personnal";
 	public static final String PROJECT_QUALIFIER = "maven plugin";
@@ -67,6 +71,10 @@ public class GatewayModelBuilder {
 	public static final int PROJECT_SEARCH_ANALYSES_PAGE_SIZE = 10;
 	public static final int PROJECT_SEARCH_ANALYSES_PAGE_TOTAL = 1;
 
+	public static final int COMPONENT_SEARCH_PAGE_INDEX = 0;
+	public static final int COMPONENT_SEARCH_PAGE_SIZE = 10;
+	public static final int COMPONENT_SEARCH_PAGE_TOTAL = 1;
+
 	public static final Integer PERIOD_INDEX = 1;
 	public static final LocalDateTime PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
 			DateTimeConverter.DATE_TIME_FORMATTER);
@@ -82,6 +90,15 @@ public class GatewayModelBuilder {
 		return p;
 	}
 
+	public static Paging buildComponentSearchPaging() {
+		Paging p = new Paging();
+		p.setPageIndex(COMPONENT_SEARCH_PAGE_INDEX);
+		p.setPageSize(COMPONENT_SEARCH_PAGE_SIZE);
+		p.setTotal(COMPONENT_SEARCH_PAGE_TOTAL);
+		return p;
+	}
+
+	
 	public static Paging buildProjectSearchPaging() {
 		Paging p = new Paging();
 		p.setPageIndex(PROJECT_SEARCH_PAGE_INDEX);
@@ -125,6 +142,19 @@ public class GatewayModelBuilder {
 		return a;
 	}
 
+	public static ComponentShowResponse buildComponentShow() {
+		ComponentShowResponse cs = new ComponentShowResponse();
+		cs.setComponent(buildComponent());
+		return cs;
+	}
+
+	public static ComponentSearchResponse buildComponentSearch() {
+		ComponentSearchResponse cs = new ComponentSearchResponse();
+		cs.setPaging(buildComponentSearchPaging());
+		cs.getComponents().add(buildComponent());
+		return cs;
+	}
+	
 	public static ProjectAnalysesSearchResponse buildProjectAnalysesSearch() {
 		ProjectAnalysesSearchResponse pas = new ProjectAnalysesSearchResponse();
 		pas.setPaging(buildProjectAnalysesSearchPaging());

@@ -39,32 +39,25 @@ public class SonarQubeComponentsGatewayClient {
 
 	}
 
-	public ComponentSearchResponse search(final String keyword, final List<String> projectKeys)
-			throws SonarQubeGatewayException {
-		return search(keyword, projectKeys, DEFAULT_COMPONENT_QUALIFIERS);
+	public ComponentSearchResponse search(final String keyword) throws SonarQubeGatewayException {
+		return search(keyword, DEFAULT_COMPONENT_QUALIFIERS);
 	}
 
-	public ComponentSearchResponse search(final String keyword, final List<String> projectKeys,
-			final List<String> componentQualifiers) throws SonarQubeGatewayException {
+	public ComponentSearchResponse search(final String keyword, final List<String> componentQualifiers)
+			throws SonarQubeGatewayException {
 		// Required params
-		//TODO validate this
 		if (CollectionUtils.isEmpty(componentQualifiers)) {
 			throw new IllegalArgumentException("Invalid parameter: 'componentQualifiers'");
 		}
 
 		// Query
-		WebTarget webTarget = client.target(baseUri + SEARCH_URI) //
-				.queryParam(PROJECT_KEYS, StringUtils.join(projectKeys.listIterator(), ","));
+		WebTarget webTarget = client.target(baseUri + SEARCH_URI);
 
 		// Optional params
-		if (CollectionUtils.isNotEmpty(projectKeys)) {
-			webTarget = webTarget.queryParam(PROJECT_KEYS, StringUtils.join(projectKeys.listIterator(), ","));
-		}
 		if (StringUtils.isNotEmpty(keyword)) {
 			webTarget = webTarget.queryParam(COMPONENT_KEYWORD, keyword);
 		}
-		//TODO validate this
-		if (!CollectionUtils.isNotEmpty(componentQualifiers)) {
+		if (CollectionUtils.isNotEmpty(componentQualifiers)) {
 			webTarget = webTarget.queryParam(COMPONENT_QUALIFIERS,
 					StringUtils.join(componentQualifiers.listIterator(), ","));
 		}
@@ -83,8 +76,7 @@ public class SonarQubeComponentsGatewayClient {
 		}
 
 		// Query
-		WebTarget webTarget = client.target(baseUri + SHOW_URI)
-				.queryParam(COMPONENT_KEY, componentKey);
+		WebTarget webTarget = client.target(baseUri + SHOW_URI).queryParam(COMPONENT_KEY, componentKey);
 
 		// Call
 		ComponentShowConsumer componentShowConsumer = new ComponentShowConsumer();

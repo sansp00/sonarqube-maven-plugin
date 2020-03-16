@@ -55,10 +55,6 @@ public class Component {
         return this;
     }
 
-    @JsonIgnore
-    public boolean isSetHistoryDateRange() {
-        return historyDateRange != null;
-    }
 
     public LocalDateTime getExtractionDate() {
         return extractionDate;
@@ -73,10 +69,6 @@ public class Component {
         return this;
     }
 
-    @JsonIgnore
-    public boolean isSetExtractionDate() {
-        return extractionDate != null;
-    }
 
     public String getKey() {
         return key;
@@ -90,10 +82,6 @@ public class Component {
     public Component withKey(String key) {
         this.key = key;
         return this;
-    }
-
-    public boolean isSetKey() {
-        return key != null;
     }
 
     public String getUri() {
@@ -110,10 +98,6 @@ public class Component {
         return this;
     }
 
-    public boolean isSetUri() {
-        return uri != null;
-    }
-
     public String getName() {
         return name;
     }
@@ -126,10 +110,6 @@ public class Component {
     public Component withName(String name) {
         this.name = name;
         return this;
-    }
-
-    public boolean isSetName() {
-        return name != null;
     }
 
     public List<HistoryMeasures> getHistoryMeasures() {
@@ -146,10 +126,6 @@ public class Component {
         return this;
     }
 
-    public boolean isSetHistoryMeasures() {
-        return historyMeasures != null && !historyMeasures.isEmpty();
-    }
-
     public NutshellMeasures getNutshellMeasures() {
         return nutshellMeasures;
     }
@@ -162,10 +138,6 @@ public class Component {
     public Component withNutshellMeasures(NutshellMeasures nutshellMeasures) {
         this.nutshellMeasures = nutshellMeasures;
         return this;
-    }
-
-    public boolean isSetNutshellMeasures() {
-        return nutshellMeasures != null;
     }
 
     @Override

@@ -47,10 +47,6 @@ public class History {
 		return this;
 	}
 
-	public boolean isSetValue() {
-		return this.value != null;
-	}
-
 	@JsonProperty("date")
 	public LocalDateTime getDate() {
 		return date;

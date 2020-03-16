@@ -107,72 +107,13 @@ public class ModelBuilder {
 		return nutshellMeasures;
 	}
 
-	// public static List<LeakMeasure> buildLeakMeasures(final
-	// List<com.github.sansp00.maven.sonarqube.gateway.model.Measure> measures)
-	// {
-	// final Map<LocalDateTime, LeakMeasure> leakMeasureDetailByDateTime = new
-	// TreeMap<>();
-	//
-	// for (com.github.sansp00.maven.sonarqube.gateway.model.Measure measure :
-	// measures) {
-	// for (com.github.sansp00.maven.sonarqube.gateway.model.History history :
-	// measure.getHistory()) {
-	// if (history.isSetValue()) {
-	// if (!leakMeasureDetailByDateTime.containsKey(history.getDate())) {
-	// final LeakMeasure leakMeasure = new
-	// LeakMeasure().withAnalysisDate(history.getDate());
-	// initLeakMeasure(leakMeasure);
-	// leakMeasureDetailByDateTime.put(history.getDate(), leakMeasure);
-	// }
-	//
-	// final LeakMeasure leakMeasure =
-	// leakMeasureDetailByDateTime.get(history.getDate());
-	//
-	// switch (measure.getMetric()) {
-	// case "new_reliability_rating":
-	// leakMeasure.setReliabilityRating(Rating.valueOfDouble(NumberUtils.toDouble(history.getValue())));
-	// break;
-	// case "new_bugs":
-	// leakMeasure.setBugs(new BigInteger(history.getValue()));
-	// break;
-	// case "new_security_rating":
-	// leakMeasure.setSecurityRating(Rating.valueOfDouble(NumberUtils.toDouble(history.getValue())));
-	// break;
-	// case "new_vulnerabilities":
-	// leakMeasure.setVulnerabilities(new BigInteger(history.getValue()));
-	// break;
-	// case "new_maintainability_rating":
-	// leakMeasure.setMaintainabilityRating(Rating.valueOfDouble(NumberUtils.toDouble(history.getValue())));
-	// break;
-	// case "new_code_smells":
-	// leakMeasure.setCodeSmells(new BigInteger(history.getValue()));
-	// break;
-	// case "new_coverage":
-	// leakMeasure.setCoverage(new BigDecimal(history.getValue()));
-	// break;
-	// case "new_duplicated_lines_density":
-	// leakMeasure.setDuplicatedLinesDensity(new
-	// BigDecimal(history.getValue()));
-	// break;
-	// case "ncloc":
-	// leakMeasure.setLinesOfCode(new BigInteger(history.getValue()));
-	// break;
-	// default:
-	// break;
-	// }
-	// }
-	// }
-	// }
-	// return new ArrayList<LeakMeasure>(leakMeasureDetailByDateTime.values());
-	// }
-
 	public static List<HistoryMeasures> buildHistoryMeasures(
 			final List<com.github.sansp00.maven.sonarqube.gateway.model.Measure> measures) {
 		final Map<LocalDateTime, HistoryMeasures> historyMeasureDetailByDateTime = new TreeMap<>();
 
 		for (com.github.sansp00.maven.sonarqube.gateway.model.Measure measure : measures) {
 			for (com.github.sansp00.maven.sonarqube.gateway.model.History history : measure.getHistory()) {
-				if (history.isSetValue()) {
+				if (history != null) {
 					if (!historyMeasureDetailByDateTime.containsKey(history.getDate())) {
 						final HistoryMeasures leakMeasure = new HistoryMeasures().withAnalysisDate(history.getDate());
 						initHistoryMeasure(leakMeasure);
@@ -249,9 +190,9 @@ public class ModelBuilder {
 		return measures.stream().collect(
 				Collectors.toMap(com.github.sansp00.maven.sonarqube.gateway.model.Measure::getMetric, measure -> {
 					String value = "";
-					if (measure.isSetValue()) {
+					if (measure.getValue() != null) {
 						return measure.getValue();
-					} else if (measure.isSetPeriods()) {
+					} else if (measure.getPeriods() != null) {
 						Map<Integer, String> periods = mapPeriods(measure.getPeriods());
 						return periods.getOrDefault(periodsIndex, "");
 					}

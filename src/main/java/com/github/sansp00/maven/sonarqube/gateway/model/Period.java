@@ -72,10 +72,6 @@ public class Period {
 		return this;
 	}
 
-	public boolean isSetValue() {
-		return this.value != null;
-	}
-
 	@JsonProperty("mode")
 	public String getMode() {
 		return mode;

@@ -49,10 +49,6 @@ public class Measure {
 		return this;
 	}
 
-	public boolean isSetMetric() {
-		return this.metric != null;
-	}
-
 	@JsonProperty("value")
 	public String getValue() {
 		return value;
@@ -66,10 +62,6 @@ public class Measure {
 	public Measure withValue(String value) {
 		this.value = value;
 		return this;
-	}
-
-	public boolean isSetValue() {
-		return this.value != null;
 	}
 
 	@JsonProperty("periods")
@@ -87,10 +79,6 @@ public class Measure {
 		return this;
 	}
 
-	public boolean isSetPeriods() {
-		return this.periods != null && !periods.isEmpty();
-	}
-
 	@JsonProperty("history")
 	public List<History> getHistory() {
 		return history;
@@ -104,10 +92,6 @@ public class Measure {
 	public Measure withHistory(List<History> history) {
 		this.history = history;
 		return this;
-	}
-
-	public boolean isSetHistory() {
-		return this.history != null && !history.isEmpty();
 	}
 
 	@JsonAnyGetter
