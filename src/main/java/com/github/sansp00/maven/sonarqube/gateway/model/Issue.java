@@ -307,4 +307,5 @@ public class Issue {
 	public boolean equals(Object other) {
 		return EqualsBuilder.reflectionEquals(this, other, "additionalProperties");
 	}
+	
 }
