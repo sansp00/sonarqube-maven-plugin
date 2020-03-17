@@ -52,7 +52,7 @@ public class SonarQubeComponentsGatewayClientTest {
 	}
 
 	@Test
-	public void search() throws SonarQubeGatewayException {
+	public void searchWithKeyWordAndComponentQualifiers() throws SonarQubeGatewayException {
 		ComponentSearchResponse cs = GatewayModelBuilder.buildComponentSearch();
 
 		Mockito.when(client.target(SonarQubeComponentsGatewayClient.SEARCH_URI)).thenReturn(webTarget);
@@ -77,6 +77,31 @@ public class SonarQubeComponentsGatewayClientTest {
 
 		Mockito.verify(webTarget).queryParam(SonarQubeComponentsGatewayClient.COMPONENT_KEYWORD,
 				GatewayModelBuilder.KEYWORD);
+
+		assertFalse(componentSearchResponse.getComponents().isEmpty());
+		assertEquals(1, componentSearchResponse.getComponents().size());
+		assertEquals(GatewayModelBuilder.PROJECT_KEY, componentSearchResponse.getComponents().get(0).getKey());
+	}
+
+	@Test
+	public void searchWithComponentQualifiers() throws SonarQubeGatewayException {
+		ComponentSearchResponse cs = GatewayModelBuilder.buildComponentSearch();
+
+		Mockito.when(client.target(SonarQubeComponentsGatewayClient.SEARCH_URI)).thenReturn(webTarget);
+
+		Mockito.when(webTarget.queryParam(ArgumentMatchers.eq(SonarQubeComponentsGatewayClient.COMPONENT_QUALIFIERS),
+				ArgumentMatchers.anyString())).thenReturn(webTarget);
+
+		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
+		Mockito.when(builder.get()).thenReturn(response);
+		Mockito.when(response.getStatus()).thenReturn(200);
+		Mockito.when(response.getStatusInfo()).thenReturn(statusType);
+		Mockito.when(statusType.getFamily()).thenReturn(Family.SUCCESSFUL);
+		Mockito.when(response.hasEntity()).thenReturn(Boolean.TRUE);
+		Mockito.when(response.readEntity(ComponentSearchResponse.class)).thenReturn(cs);
+
+		ComponentSearchResponse componentSearchResponse = gatewayClient.search(null,
+				SonarQubeComponentsGatewayClient.DEFAULT_COMPONENT_QUALIFIERS);
 
 		assertFalse(componentSearchResponse.getComponents().isEmpty());
 		assertEquals(1, componentSearchResponse.getComponents().size());

@@ -29,6 +29,7 @@ public class ProjectAnalysesSearchResponseTest {
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //
@@ -40,7 +41,6 @@ public class ProjectAnalysesSearchResponseTest {
 				.areWellImplemented();
 
 	}
-	
 
 	@Test
 	public void testMapper() throws JsonParseException, JsonMappingException, IOException {

@@ -76,7 +76,7 @@ public class SonarQubeProjectsGatewayClient {
 		}
 
 		if (onProvisionedOnly != null) {
-			webTarget = webTarget.queryParam(ON_PROVISIONED_ONLY, onProvisionedOnly);
+			webTarget = webTarget.queryParam(ON_PROVISIONED_ONLY, String.valueOf(onProvisionedOnly));
 		}
 
 		// Call

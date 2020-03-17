@@ -20,6 +20,7 @@ public class DateRangeTest {
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

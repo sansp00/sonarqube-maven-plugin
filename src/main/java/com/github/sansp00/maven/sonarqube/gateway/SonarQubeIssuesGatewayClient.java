@@ -21,7 +21,7 @@ public class SonarQubeIssuesGatewayClient {
     private final String baseUri;
     private final Client client;
 
-    public static final String SEARCH_ISSUES_URI = "api/issues/search";
+    public static final String SEARCH_URI = "api/issues/search";
 
     public static final String ADDITIONAL_FIELDS = "additionalFields";
     public static final String ASCENDING_SORT = "asc";
@@ -68,7 +68,7 @@ public class SonarQubeIssuesGatewayClient {
         }
 
         // Query
-        WebTarget webTarget = client.target(baseUri + SEARCH_ISSUES_URI);
+        WebTarget webTarget = client.target(baseUri + SEARCH_URI);
 
         // Required mutually exclusive params
         if (!CollectionUtils.isEmpty(projectKeys)) {

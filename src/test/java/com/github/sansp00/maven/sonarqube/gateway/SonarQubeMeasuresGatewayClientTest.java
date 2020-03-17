@@ -1,10 +1,7 @@
 package com.github.sansp00.maven.sonarqube.gateway;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
+import java.time.LocalDate;
 import java.util.Arrays;
-import java.util.Optional;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Invocation.Builder;
@@ -14,18 +11,17 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status.Family;
 import javax.ws.rs.core.Response.StatusType;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
-import com.github.sansp00.maven.sonarqube.gateway.model.ProjectCreateResponse;
-import com.github.sansp00.maven.sonarqube.gateway.model.ProjectSearchResponse;
-import com.github.sansp00.maven.sonarqube.gateway.model.Visibility;
+import com.github.sansp00.maven.sonarqube.gateway.model.MeasureComponentResponse;
+import com.github.sansp00.maven.sonarqube.gateway.model.MeasureSearchHistoryResponse;
 
 @RunWith(MockitoJUnitRunner.class)
 public class SonarQubeMeasuresGatewayClientTest {
@@ -41,102 +37,102 @@ public class SonarQubeMeasuresGatewayClientTest {
 
 	@Mock
 	Response response;
-	
+
 	@Mock
 	StatusType statusType;
 
-	SonarQubeProjectsGatewayClient gatewayClient;
+	SonarQubeMeasuresGatewayClient gatewayClient;
 
 	@Before
 	public void init() {
-		gatewayClient = new SonarQubeProjectsGatewayClient("", client);
+		gatewayClient = new SonarQubeMeasuresGatewayClient("", client);
 	}
-	
-	@Test
-	public void search() throws SonarQubeGatewayException {
-		ProjectSearchResponse ps = GatewayModelBuilder.buildProjectSearch();
 
-		Mockito.when(client.target(SonarQubeProjectsGatewayClient.SEARCH_URI)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECTS_KEY, GatewayModelBuilder.PROJECT_KEY)).thenReturn(webTarget);
+	@Test
+	public void componentsWithComponentKeyAndMetricKeysAndAadditionalFields() throws SonarQubeGatewayException {
+
+		Mockito.when(client.target(SonarQubeMeasuresGatewayClient.COMPONENT_URI)).thenReturn(webTarget);
+
+		Mockito.when(
+				webTarget.queryParam(SonarQubeMeasuresGatewayClient.METRIC_KEYS, GatewayModelBuilder.MEASURE_METRIC))
+				.thenReturn(webTarget);
+		Mockito.when(
+				webTarget.queryParam(SonarQubeMeasuresGatewayClient.COMPONENT_KEY, GatewayModelBuilder.COMPONENT_KEY))
+				.thenReturn(webTarget);
+
+		Mockito.when(webTarget.queryParam(ArgumentMatchers.eq(SonarQubeMeasuresGatewayClient.ADDITIONAL_FIELDS),
+				ArgumentMatchers.anyString())).thenReturn(webTarget);
+
+		Mockito.when(
+				webTarget.queryParam(SonarQubeMeasuresGatewayClient.COMPONENT_KEY, GatewayModelBuilder.COMPONENT_KEY))
+				.thenReturn(webTarget);
+
 		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
 		Mockito.when(builder.get()).thenReturn(response);
 		Mockito.when(response.getStatus()).thenReturn(200);
 		Mockito.when(response.getStatusInfo()).thenReturn(statusType);
 		Mockito.when(statusType.getFamily()).thenReturn(Family.SUCCESSFUL);
 		Mockito.when(response.hasEntity()).thenReturn(Boolean.TRUE);
-		Mockito.when(response.readEntity(ProjectSearchResponse.class)).thenReturn(ps);
+		Mockito.when(response.readEntity(MeasureComponentResponse.class))
+				.thenReturn(GatewayModelBuilder.buildMeasureComponentResponse());
 
-		ProjectSearchResponse projectSearchResponse = gatewayClient.search(null, Arrays.asList(GatewayModelBuilder.PROJECT_KEY));
+		gatewayClient.component(GatewayModelBuilder.COMPONENT_KEY, GatewayModelBuilder.MEASURE_METRIC_LIST,
+				Arrays.asList("toto"));
 
-		Mockito.verify(webTarget).queryParam(SonarQubeProjectsGatewayClient.PROJECTS_KEY, GatewayModelBuilder.PROJECT_KEY);
+		Mockito.verify(webTarget).queryParam(SonarQubeMeasuresGatewayClient.COMPONENT_KEY,
+				GatewayModelBuilder.COMPONENT_KEY);
+	}
 
-		assertFalse(projectSearchResponse.getProjects().isEmpty());
-		Assert.assertEquals(GatewayModelBuilder.PROJECT_NAME, projectSearchResponse.getProjects().stream().findFirst().get().getName());
+	@Test(expected = IllegalArgumentException.class)
+	public void createWithoutComponentKey() throws SonarQubeGatewayException {
+		gatewayClient.component(null, GatewayModelBuilder.MEASURE_METRIC_LIST, Arrays.asList("toto"));
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void createWithoutMetricKeys() throws SonarQubeGatewayException {
+		gatewayClient.component(GatewayModelBuilder.COMPONENT_KEY, null, Arrays.asList("toto"));
 	}
 
 	@Test
-	public void create() throws SonarQubeGatewayException {
-		ProjectCreateResponse pcr = new ProjectCreateResponse();
-		pcr.setProject(GatewayModelBuilder.buildProject());
+	public void searchHistoryWithComponentKeyAndMetricKeysAndDates() throws SonarQubeGatewayException {
 
-		Mockito.when(client.target(SonarQubeProjectsGatewayClient.CREATE_URI)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECT_NAME, GatewayModelBuilder.PROJECT_NAME)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECT_KEY, GatewayModelBuilder.PROJECT_KEY)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECT_BRANCH, GatewayModelBuilder.PROJECT_BRANCH)).thenReturn(webTarget);
+		Mockito.when(client.target(SonarQubeMeasuresGatewayClient.SEARCH_HISTORY_URI)).thenReturn(webTarget);
+
+		Mockito.when(webTarget.queryParam(SonarQubeMeasuresGatewayClient.METRICS, GatewayModelBuilder.MEASURE_METRIC))
+				.thenReturn(webTarget);
+		Mockito.when(
+				webTarget.queryParam(SonarQubeMeasuresGatewayClient.COMPONENT_KEY, GatewayModelBuilder.COMPONENT_KEY))
+				.thenReturn(webTarget);
+		Mockito.when(webTarget.queryParam(ArgumentMatchers.eq(SonarQubeMeasuresGatewayClient.FROM),
+				ArgumentMatchers.anyString())).thenReturn(webTarget);
+
+		Mockito.when(webTarget.queryParam(ArgumentMatchers.eq(SonarQubeMeasuresGatewayClient.TO),
+				ArgumentMatchers.anyString())).thenReturn(webTarget);
+
 		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
-		Mockito.when(builder.post(null, Response.class)).thenReturn(response);
+		Mockito.when(builder.get()).thenReturn(response);
 		Mockito.when(response.getStatus()).thenReturn(200);
 		Mockito.when(response.getStatusInfo()).thenReturn(statusType);
 		Mockito.when(statusType.getFamily()).thenReturn(Family.SUCCESSFUL);
 		Mockito.when(response.hasEntity()).thenReturn(Boolean.TRUE);
-		Mockito.when(response.readEntity(ProjectCreateResponse.class)).thenReturn(pcr);
+		Mockito.when(response.readEntity(MeasureSearchHistoryResponse.class))
+				.thenReturn(GatewayModelBuilder.buildMeasureSearchHistoryResponse());
 
-		Optional<ProjectCreateResponse> projectCreateResponse = gatewayClient.create(GatewayModelBuilder.PROJECT_NAME, GatewayModelBuilder.PROJECT_KEY, GatewayModelBuilder.PROJECT_BRANCH, Visibility.UNDEFINED);
+		gatewayClient.searchHistory(GatewayModelBuilder.COMPONENT_KEY, GatewayModelBuilder.MEASURE_METRIC_LIST, LocalDate.now(),
+				LocalDate.now());
 
-		Mockito.verify(webTarget).queryParam(SonarQubeProjectsGatewayClient.PROJECT_NAME, GatewayModelBuilder.PROJECT_NAME);
-		Mockito.verify(webTarget).queryParam(SonarQubeProjectsGatewayClient.PROJECT_KEY, GatewayModelBuilder.PROJECT_KEY);
-		Mockito.verify(webTarget).queryParam(SonarQubeProjectsGatewayClient.PROJECT_BRANCH, GatewayModelBuilder.PROJECT_BRANCH);
-
-		assertTrue(projectCreateResponse.isPresent());
-		Assert.assertEquals(GatewayModelBuilder.PROJECT_NAME, projectCreateResponse.get().getProject().getName());
+		Mockito.verify(webTarget).queryParam(SonarQubeMeasuresGatewayClient.COMPONENT_KEY,
+				GatewayModelBuilder.COMPONENT_KEY);
 	}
-
-	@Test
-	public void delete() throws SonarQubeGatewayException {
-		Mockito.when(client.target(SonarQubeProjectsGatewayClient.DELETE_URI)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECT_KEY, GatewayModelBuilder.PROJECT_KEY)).thenReturn(webTarget);
-		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
-		Mockito.when(builder.post(null)).thenReturn(response);
-		
-		Mockito.when(response.getStatus()).thenReturn(200);
-		Mockito.when(response.getStatusInfo()).thenReturn(statusType);
-		Mockito.when(statusType.getFamily()).thenReturn(Family.SUCCESSFUL);
-		Mockito.when(response.hasEntity()).thenReturn(Boolean.FALSE);
-
-		gatewayClient.delete(GatewayModelBuilder.PROJECT_KEY);
-
-		Mockito.verify(webTarget).queryParam(SonarQubeProjectsGatewayClient.PROJECT_KEY, GatewayModelBuilder.PROJECT_KEY);
-
-	}
-
-	@Test
-	public void updateVisitlity() throws SonarQubeGatewayException {
-		Mockito.when(client.target(SonarQubeProjectsGatewayClient.UPDATE_VISIBILITY_URI)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECT_KEY, GatewayModelBuilder.PROJECT_KEY)).thenReturn(webTarget);
-		Mockito.when(webTarget.queryParam(SonarQubeProjectsGatewayClient.PROJECT_VISIBILITY, Visibility.PUBLIC.getCode())).thenReturn(webTarget);
-		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
-		Mockito.when(builder.post(null, Response.class)).thenReturn(response);
-		
-		Mockito.when(response.getStatus()).thenReturn(200);
-		Mockito.when(response.getStatusInfo()).thenReturn(statusType);
-		Mockito.when(statusType.getFamily()).thenReturn(Family.SUCCESSFUL);
-		Mockito.when(response.hasEntity()).thenReturn(Boolean.FALSE);
-
-		gatewayClient.updateVisility(GatewayModelBuilder.PROJECT_KEY, Visibility.PUBLIC);
-
-		Mockito.verify(webTarget).queryParam(SonarQubeProjectsGatewayClient.PROJECT_KEY, GatewayModelBuilder.PROJECT_KEY);
-
-	}
-
 	
+
+	@Test(expected = IllegalArgumentException.class)
+	public void searchHistoryWithoutComponentKey() throws SonarQubeGatewayException {
+		gatewayClient.searchHistory(null, GatewayModelBuilder.MEASURE_METRIC_LIST, LocalDate.now(), LocalDate.now());
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void searchHistoryWithoutMetricKeys() throws SonarQubeGatewayException {
+		gatewayClient.searchHistory(GatewayModelBuilder.COMPONENT_KEY, null, LocalDate.now(), LocalDate.now());
+	}
 }

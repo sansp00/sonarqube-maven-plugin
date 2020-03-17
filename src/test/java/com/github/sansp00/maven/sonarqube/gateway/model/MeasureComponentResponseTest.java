@@ -29,6 +29,7 @@ public class MeasureComponentResponseTest {
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

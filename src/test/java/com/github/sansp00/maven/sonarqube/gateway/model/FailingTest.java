@@ -21,6 +21,7 @@ public class FailingTest {
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //
@@ -30,7 +31,6 @@ public class FailingTest {
 		assertPojoMethodsFor(classUnderTest) //
 				.testing(TO_STRING) //
 				.areWellImplemented();
-
 
 	}
 }

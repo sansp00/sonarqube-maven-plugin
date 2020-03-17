@@ -15,12 +15,13 @@ public class AttrTest {
 	@Test
 	public void testPojo() {
 		// Arrange
-		final Class<?> classUnderTest =  Attr.class;
+		final Class<?> classUnderTest = Attr.class;
 
 		// Act
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

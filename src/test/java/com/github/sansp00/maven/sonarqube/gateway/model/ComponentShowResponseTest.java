@@ -29,6 +29,7 @@ public class ComponentShowResponseTest {
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

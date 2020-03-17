@@ -15,12 +15,13 @@ public class AncestorTest {
 	@Test
 	public void testPojo() {
 		// Arrange
-		final Class<?> classUnderTest =  Ancestor.class;
+		final Class<?> classUnderTest = Ancestor.class;
 
 		// Act
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

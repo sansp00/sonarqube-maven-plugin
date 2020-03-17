@@ -15,12 +15,13 @@ public class CommentTest {
 	@Test
 	public void testPojo() {
 		// Arrange
-		final Class<?> classUnderTest =  Comment.class;
+		final Class<?> classUnderTest = Comment.class;
 
 		// Act
 
 		// Assert
 		assertPojoMethodsFor(classUnderTest, exclude("additionalProperties")) //
+				.quickly() //
 				.testing(GETTER) //
 				.testing(SETTER) //
 				.testing(EQUALS, HASH_CODE) //

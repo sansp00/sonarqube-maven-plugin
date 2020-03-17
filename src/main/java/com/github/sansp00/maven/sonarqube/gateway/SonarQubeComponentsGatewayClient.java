@@ -51,17 +51,14 @@ public class SonarQubeComponentsGatewayClient {
 		}
 
 		// Query
-		WebTarget webTarget = client.target(baseUri + SEARCH_URI);
+		WebTarget webTarget = client.target(baseUri + SEARCH_URI)//
+				.queryParam(COMPONENT_QUALIFIERS, StringUtils.join(componentQualifiers.listIterator(), ","));
 
 		// Optional params
 		if (StringUtils.isNotEmpty(keyword)) {
 			webTarget = webTarget.queryParam(COMPONENT_KEYWORD, keyword);
 		}
-		if (CollectionUtils.isNotEmpty(componentQualifiers)) {
-			webTarget = webTarget.queryParam(COMPONENT_QUALIFIERS,
-					StringUtils.join(componentQualifiers.listIterator(), ","));
-		}
-
+		
 		// Call
 		ComponentSearchConsumer componentSearchConsumer = new ComponentSearchConsumer();
 		SonarQubeGatewayResponseHandler.get(webTarget, ComponentSearchResponse.class, componentSearchConsumer);

@@ -11,6 +11,8 @@ import com.github.sansp00.maven.sonarqube.gateway.model.ComponentSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.ComponentShowResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.Event;
 import com.github.sansp00.maven.sonarqube.gateway.model.History;
+import com.github.sansp00.maven.sonarqube.gateway.model.Issue;
+import com.github.sansp00.maven.sonarqube.gateway.model.IssuesSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.Measure;
 import com.github.sansp00.maven.sonarqube.gateway.model.MeasureComponentResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.MeasureSearchHistoryResponse;
@@ -32,7 +34,7 @@ public class GatewayModelBuilder {
 	public static final String COMPONENT_KEY = "com.github.sonarqube:master";
 	public static final String COMPONENT_NAME = "SonarQube Maven Client";
 	public static final String COMPONENT_BRANCH = "master";
-	
+
 	public static final String KEYWORD = "keyword";
 
 	public static final String PROJECT_ORGANISATION = "Personnal";
@@ -75,6 +77,21 @@ public class GatewayModelBuilder {
 	public static final int COMPONENT_SEARCH_PAGE_SIZE = 10;
 	public static final int COMPONENT_SEARCH_PAGE_TOTAL = 1;
 
+	public static final String ISSUE_KEY = "AV1GDmj6NAVDjyrgWoNi";
+	public static final String ISSUE_COMPONENT = "com.github.sonarqube:src/main/java/com/github/sansp00/maven/sonarqube/Assert.java";
+	public static final String ISSUE_PROJECT = "com.github.sonarqube";
+	public static final String ISSUE_RULE = "java:S2589";
+	public static final String ISSUE_STATUS = "CONFIRMED";
+	public static final String ISSUE_SEVERITY = "MAJOR";
+	public static final String ISSUE_MESSAGE = "Remove this expression which always evaluates to \"true\"";
+	public static final int ISSUE_LINE = 133;
+	public static final String ISSUE_HASH = "53e44d43e22a4c58d3a711137fefad95";
+	public static final String ISSUE_EFFORT = "10min";
+	public static final String ISSUE_CREATION_DATE = "2017-07-15T13:39:53+0200";
+	public static final String ISSUE_UPDATE_DATE = "2017-07-15T13:39:53+0200";
+	public static final String ISSUE_TYPE = "CODE_SMELL";
+	
+
 	public static final Integer PERIOD_INDEX = 1;
 	public static final LocalDateTime PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
 			DateTimeConverter.DATE_TIME_FORMATTER);
@@ -90,6 +107,13 @@ public class GatewayModelBuilder {
 		return p;
 	}
 
+	public static Paging buildIssueSearchPaging() {
+		Paging p = new Paging();
+		p.setPageIndex(COMPONENT_SEARCH_PAGE_INDEX);
+		p.setPageSize(COMPONENT_SEARCH_PAGE_SIZE);
+		p.setTotal(COMPONENT_SEARCH_PAGE_TOTAL);
+		return p;
+	}
 	public static Paging buildComponentSearchPaging() {
 		Paging p = new Paging();
 		p.setPageIndex(COMPONENT_SEARCH_PAGE_INDEX);
@@ -98,7 +122,6 @@ public class GatewayModelBuilder {
 		return p;
 	}
 
-	
 	public static Paging buildProjectSearchPaging() {
 		Paging p = new Paging();
 		p.setPageIndex(PROJECT_SEARCH_PAGE_INDEX);
@@ -142,6 +165,32 @@ public class GatewayModelBuilder {
 		return a;
 	}
 
+	public static IssuesSearchResponse buildIssuesSearch() {
+		IssuesSearchResponse is = new IssuesSearchResponse();
+		is.getComponents().add(buildComponent());
+		is.getIssues().add(buildIssue());
+		is.setPaging(buildIssueSearchPaging());
+		return is;
+	}
+
+	private static Issue buildIssue() {
+		Issue i = new Issue();
+		i.setKey(ISSUE_KEY);
+		i.setComponent(ISSUE_COMPONENT);
+		i.setProject(ISSUE_PROJECT);
+		i.setRule(ISSUE_RULE);
+		i.setStatus(ISSUE_STATUS);
+		i.setSeverity(ISSUE_SEVERITY);
+		i.setMessage(ISSUE_MESSAGE);
+		i.setLine(ISSUE_LINE);
+		i.setHash(ISSUE_HASH);
+		i.setEffort(ISSUE_EFFORT);
+		i.setCreationDate(ISSUE_CREATION_DATE);
+		i.setUpdateDate(ISSUE_UPDATE_DATE);
+		i.setType(ISSUE_TYPE);
+		return i;
+	}
+
 	public static ComponentShowResponse buildComponentShow() {
 		ComponentShowResponse cs = new ComponentShowResponse();
 		cs.setComponent(buildComponent());
@@ -154,7 +203,7 @@ public class GatewayModelBuilder {
 		cs.getComponents().add(buildComponent());
 		return cs;
 	}
-	
+
 	public static ProjectAnalysesSearchResponse buildProjectAnalysesSearch() {
 		ProjectAnalysesSearchResponse pas = new ProjectAnalysesSearchResponse();
 		pas.setPaging(buildProjectAnalysesSearchPaging());
@@ -209,7 +258,6 @@ public class GatewayModelBuilder {
 		return p;
 	}
 
-	
 	public static Paging buildPaging() {
 		Paging p = new Paging();
 		p.setPageIndex(1);

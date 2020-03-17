@@ -3,6 +3,8 @@ package com.github.sansp00.maven.sonarqube.gateway;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
+import java.time.LocalDate;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Invocation.Builder;
 import javax.ws.rs.client.WebTarget;
@@ -14,6 +16,7 @@ import javax.ws.rs.core.Response.StatusType;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -48,7 +51,7 @@ public class SonarQubeProjectAnalysesGatewayClientTest {
 	}
 
 	@Test
-	public void getAll() throws SonarQubeGatewayException {
+	public void searchWithProjectKeyCategoryAndDates() throws SonarQubeGatewayException {
 		ProjectAnalysesSearchResponse psa = GatewayModelBuilder.buildProjectAnalysesSearch();
 
 		Mockito.when(client.target(SonarQubeProjectAnalysesGatewayClient.SEARCH_URI)).thenReturn(webTarget);
@@ -56,6 +59,12 @@ public class SonarQubeProjectAnalysesGatewayClientTest {
 				GatewayModelBuilder.PROJECT_KEY)).thenReturn(webTarget);
 		Mockito.when(webTarget.queryParam(SonarQubeProjectAnalysesGatewayClient.EVENT_CATEGORY,
 				Category.QUALITY_PROFILE.getCode())).thenReturn(webTarget);
+		Mockito.when(webTarget.queryParam(ArgumentMatchers.eq(SonarQubeProjectAnalysesGatewayClient.FROM),
+				ArgumentMatchers.anyString())).thenReturn(webTarget);
+		Mockito.when(webTarget.queryParam(ArgumentMatchers.eq(SonarQubeProjectAnalysesGatewayClient.TO),
+				ArgumentMatchers.anyString())).thenReturn(webTarget);
+
+		
 		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
 		Mockito.when(builder.get()).thenReturn(response);
 		Mockito.when(response.getStatus()).thenReturn(200);
@@ -65,7 +74,7 @@ public class SonarQubeProjectAnalysesGatewayClientTest {
 		Mockito.when(response.readEntity(ProjectAnalysesSearchResponse.class)).thenReturn(psa);
 
 		ProjectAnalysesSearchResponse projectAnalysesSearchResponse = gatewayClient
-				.search(GatewayModelBuilder.PROJECT_KEY, Category.QUALITY_PROFILE, null, null);
+				.search(GatewayModelBuilder.PROJECT_KEY, Category.QUALITY_PROFILE, LocalDate.now(), LocalDate.now());
 
 		Mockito.verify(webTarget).queryParam(SonarQubeProjectAnalysesGatewayClient.PROJECT_KEY,
 				GatewayModelBuilder.PROJECT_KEY);
