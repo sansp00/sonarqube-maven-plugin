@@ -3,8 +3,8 @@
 TravisCI status: 
 [![Build Status](https://travis-ci.org/sansp00/sonarqube-maven-plugin.svg?branch=master)](https://travis-ci.org/sansp00/sonarqube-maven-plugin)
 
-CodeCov status: 
-[![codecov](https://codecov.io/gh/sansp00/sonarqube-maven-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/sansp00/sonarqube-maven-plugin)
+CodeCov status:
+[![codecov](https://codecov.io/gh/sansp00/sonarqube-maven-plugin/branch/master/graph/badge.svg?token=VaGVMn4yFj)](https://codecov.io/gh/sansp00/sonarqube-maven-plugin) 
 
 Dependencies managed by DependaBot.
 
