@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class DateTimeConverter {
 	// 2016-12-11T17:12:45+0100
-	public static final String DATE_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
+	public static final String DATE_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
 	public static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern(DATE_TIME_FORMAT);
 	//private DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
 

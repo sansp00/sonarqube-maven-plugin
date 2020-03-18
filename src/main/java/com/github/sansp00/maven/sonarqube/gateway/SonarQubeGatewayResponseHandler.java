@@ -49,10 +49,8 @@ public class SonarQubeGatewayResponseHandler {
 
 		if (family == Family.SUCCESSFUL) {
 			if (response.hasEntity()) {
-				Optional<T> entity = Optional.ofNullable(response.readEntity(typeOfT));
-				if( capture ) {
-					capture(entity);
-				}
+				final Optional<T> entity = Optional.ofNullable(response.readEntity(typeOfT));
+				capture(status, entity);
 				return entity;
 			}
 			return Optional.empty();
@@ -62,39 +60,44 @@ public class SonarQubeGatewayResponseHandler {
 			final Errors errors = response.readEntity(Errors.class);
 			final List<String> errorMessages = errors.getErrors().stream().map(e -> e.getMsg())
 					.collect(Collectors.toList());
+			capture(status, Optional.of(errorMessages));
 			throw new SonarQubeGatewayClientException(status, errorMessages);
 		} else {
+			capture(status, Optional.empty());
 			throw new SonarQubeGatewayClientException(status);
 		}
 	}
 
 	public static <T> void get(final WebTarget webTarget, Class<T> typeOfT, Consumer<Optional<T>> responseConsumer)
 			throws SonarQubeGatewayClientException {
-		Optional<T> optionalT = handleResponse(webTarget.request(MediaType.APPLICATION_JSON).get(), typeOfT);
+		final Optional<T> optionalT = handleResponse(webTarget.request(MediaType.APPLICATION_JSON).get(), typeOfT);
 		responseConsumer.accept(optionalT);
 
 		if (PagingResponse.class.isAssignableFrom(typeOfT) && optionalT.isPresent()) {
-			Paging paging = ((PagingResponse) optionalT.get()).getPaging();
-			int totalPages = (paging.getTotal() > MAX_RESULTS ? MAX_RESULTS : paging.getTotal()) / paging.getPageSize();
+			final Paging paging = ((PagingResponse) optionalT.get()).getPaging();
+			final int totalPages = (paging.getTotal() > MAX_RESULTS ? MAX_RESULTS : paging.getTotal())
+					/ paging.getPageSize();
 
 			for (int page = paging.getPageIndex() + 1; page <= totalPages; page++) {
-				WebTarget pagedWebTarget = webTarget.queryParam(ONE_BASED_PAGE_NUMBER, page);
-				Optional<T> pagedOptionalT = handleResponse(pagedWebTarget.request(MediaType.APPLICATION_JSON).get(),
-						typeOfT);
+				final WebTarget pagedWebTarget = webTarget.queryParam(ONE_BASED_PAGE_NUMBER, page);
+				final Optional<T> pagedOptionalT = handleResponse(
+						pagedWebTarget.request(MediaType.APPLICATION_JSON).get(), typeOfT);
 				responseConsumer.accept(pagedOptionalT);
 			}
 		}
 	}
 
-	static <T> void capture(Optional<T> entity) {
-		entity.ifPresent(e -> {
-			try {
-				FileUtils.fileWrite(e.getClass().getName() + "." + System.currentTimeMillis() + ".json", "UTF-8",
-						getObjectMapper().writeValueAsString(entity));
-			} catch (IOException exception) {
-			}
-		});
-
+	static <T> void capture(final int status, Optional<T> entity) {
+		if (capture) {
+			entity.ifPresent(e -> {
+				try {
+					final String filename = String.format("%s_%s.%s.json", e.getClass().getName(), status,
+							System.currentTimeMillis());
+					FileUtils.fileWrite(filename, "UTF-8", getObjectMapper().writeValueAsString(entity));
+				} catch (IOException exception) {
+				}
+			});
+		}
 	}
 
 	static ObjectMapper getObjectMapper() {

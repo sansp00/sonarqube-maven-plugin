@@ -52,13 +52,21 @@ public class GatewayModelBuilder {
 
 	public static final String ANALISYS_KEY = "myAnalisysKey";
 	// public static final String ANALISYS_DATE = "2016-12-12T17:12:45+0100";
-	public static final LocalDateTime ANALISYS_DATE = LocalDateTime.parse("2016-12-12T17:12:45+0100",
+//	public static final LocalDateTime ANALISYS_DATE = LocalDateTime.parse("2016-12-12T17:12:45+0100",
+//			DateTimeConverter.DATE_TIME_FORMATTER);
+//	public static final LocalDateTime LEAK_PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
+//			DateTimeConverter.DATE_TIME_FORMATTER);
+//
+//	public static final LocalDateTime HISTORY_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
+//			DateTimeConverter.DATE_TIME_FORMATTER);
+	public static final LocalDateTime ANALISYS_DATE = LocalDateTime.parse("2016-12-12T17:12:45",
 			DateTimeConverter.DATE_TIME_FORMATTER);
-	public static final LocalDateTime LEAK_PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
+	public static final LocalDateTime LEAK_PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45",
 			DateTimeConverter.DATE_TIME_FORMATTER);
 
-	public static final LocalDateTime HISTORY_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
+	public static final LocalDateTime HISTORY_DATE = LocalDateTime.parse("2016-12-10T17:12:45",
 			DateTimeConverter.DATE_TIME_FORMATTER);
+
 	public static final String HISTORY_VALUE = "10";
 
 	public static final String MEASURE_METRIC = "coverage";
@@ -77,6 +85,10 @@ public class GatewayModelBuilder {
 	public static final int COMPONENT_SEARCH_PAGE_SIZE = 10;
 	public static final int COMPONENT_SEARCH_PAGE_TOTAL = 1;
 
+	public static final int ISSUE_SEARCH_PAGE_INDEX = 0;
+	public static final int ISSUE_SEARCH_PAGE_SIZE = 10;
+	public static final int ISSUE_SEARCH_PAGE_TOTAL = 1;
+
 	public static final String ISSUE_KEY = "AV1GDmj6NAVDjyrgWoNi";
 	public static final String ISSUE_COMPONENT = "com.github.sonarqube:src/main/java/com/github/sansp00/maven/sonarqube/Assert.java";
 	public static final String ISSUE_PROJECT = "com.github.sonarqube";
@@ -87,13 +99,16 @@ public class GatewayModelBuilder {
 	public static final int ISSUE_LINE = 133;
 	public static final String ISSUE_HASH = "53e44d43e22a4c58d3a711137fefad95";
 	public static final String ISSUE_EFFORT = "10min";
-	public static final String ISSUE_CREATION_DATE = "2017-07-15T13:39:53+0200";
-	public static final String ISSUE_UPDATE_DATE = "2017-07-15T13:39:53+0200";
+	public static final String ISSUE_CREATION_DATE = "2017-07-15T13:39:53";
+	public static final String ISSUE_UPDATE_DATE = "2017-07-15T13:39:53";
+//	public static final String ISSUE_CREATION_DATE = "2017-07-15T13:39:53+0200";
+//	public static final String ISSUE_UPDATE_DATE = "2017-07-15T13:39:53+0200";
 	public static final String ISSUE_TYPE = "CODE_SMELL";
-	
 
 	public static final Integer PERIOD_INDEX = 1;
-	public static final LocalDateTime PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
+//	public static final LocalDateTime PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45+0100",
+//			DateTimeConverter.DATE_TIME_FORMATTER);
+	public static final LocalDateTime PERIOD_DATE = LocalDateTime.parse("2016-12-10T17:12:45",
 			DateTimeConverter.DATE_TIME_FORMATTER);
 	public static final String PERIOD_VALUE = "10";
 
@@ -109,11 +124,12 @@ public class GatewayModelBuilder {
 
 	public static Paging buildIssueSearchPaging() {
 		Paging p = new Paging();
-		p.setPageIndex(COMPONENT_SEARCH_PAGE_INDEX);
-		p.setPageSize(COMPONENT_SEARCH_PAGE_SIZE);
-		p.setTotal(COMPONENT_SEARCH_PAGE_TOTAL);
+		p.setPageIndex(ISSUE_SEARCH_PAGE_INDEX);
+		p.setPageSize(ISSUE_SEARCH_PAGE_SIZE);
+		p.setTotal(ISSUE_SEARCH_PAGE_TOTAL);
 		return p;
 	}
+
 	public static Paging buildComponentSearchPaging() {
 		Paging p = new Paging();
 		p.setPageIndex(COMPONENT_SEARCH_PAGE_INDEX);

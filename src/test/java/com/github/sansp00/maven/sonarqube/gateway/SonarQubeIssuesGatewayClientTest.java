@@ -157,39 +157,4 @@ public class SonarQubeIssuesGatewayClientTest {
 				Arrays.asList(IssueSeverities.MAJOR), null);
 	}
 
-	//
-//	@Test
-//	public void show() throws SonarQubeGatewayException {
-//		ComponentShowResponse cs = GatewayModelBuilder.buildComponentShow();
-//
-//		Mockito.when(client.target(SonarQubeComponentsGatewayClient.SHOW_URI)).thenReturn(webTarget);
-//
-//		Mockito.when(
-//				webTarget.queryParam(SonarQubeComponentsGatewayClient.COMPONENT_KEY, GatewayModelBuilder.COMPONENT_KEY))
-//				.thenReturn(webTarget);
-//
-//		Mockito.when(webTarget.request(MediaType.APPLICATION_JSON)).thenReturn(builder);
-//		Mockito.when(builder.get()).thenReturn(response);
-//		Mockito.when(response.getStatus()).thenReturn(200);
-//		Mockito.when(response.getStatusInfo()).thenReturn(statusType);
-//		Mockito.when(statusType.getFamily()).thenReturn(Family.SUCCESSFUL);
-//		Mockito.when(response.hasEntity()).thenReturn(Boolean.TRUE);
-//		Mockito.when(response.readEntity(ComponentShowResponse.class)).thenReturn(cs);
-//
-//		Optional<ComponentShowResponse> componentShowResponse = gatewayClient.show(GatewayModelBuilder.COMPONENT_KEY);
-//
-//		Mockito.verify(webTarget).queryParam(SonarQubeComponentsGatewayClient.COMPONENT_KEY,
-//				GatewayModelBuilder.COMPONENT_KEY);
-//
-//		assertTrue(componentShowResponse.isPresent());
-//		componentShowResponse.ifPresent(r -> {
-//			assertEquals(GatewayModelBuilder.COMPONENT_KEY, r.getComponent().getKey());
-//		});
-//	}
-//	
-//	@Test(expected = IllegalArgumentException.class)
-//	public void searchMissingRequiredComponentKey() throws SonarQubeGatewayException {
-//		gatewayClient.show(null);
-//	}
-
 }
