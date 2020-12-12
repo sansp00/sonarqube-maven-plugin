@@ -6,14 +6,9 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Optional;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.Invocation.Builder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status.Family;
-import javax.ws.rs.core.Response.StatusType;
-
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
+import org.glassfish.jersey.client.JerseyInvocation.Builder;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +20,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
 import com.github.sansp00.maven.sonarqube.gateway.model.ComponentSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.ComponentShowResponse;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status.Family;
+import jakarta.ws.rs.core.Response.StatusType;
 
 @RunWith(MockitoJUnitRunner.class)
 public class SonarQubeComponentsGatewayClientTest {

@@ -6,21 +6,21 @@ import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status.Family;
-
 import org.apache.maven.shared.utils.io.FileUtils;
 
-import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayClientException;
 import com.github.sansp00.maven.sonarqube.gateway.model.Errors;
 import com.github.sansp00.maven.sonarqube.gateway.model.Paging;
 import com.github.sansp00.maven.sonarqube.gateway.model.PagingResponse;
+
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status.Family;
 
 public class SonarQubeGatewayResponseHandler {
 

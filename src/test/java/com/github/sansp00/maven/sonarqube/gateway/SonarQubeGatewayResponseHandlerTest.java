@@ -10,10 +10,6 @@ import static org.mockito.Mockito.when;
 
 import java.util.Optional;
 
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status.Family;
-import javax.ws.rs.core.Response.StatusType;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -22,6 +18,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayClientException;
 import com.github.sansp00.maven.sonarqube.gateway.model.Error;
 import com.github.sansp00.maven.sonarqube.gateway.model.Errors;
+
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status.Family;
+import jakarta.ws.rs.core.Response.StatusType;
 
 @RunWith(MockitoJUnitRunner.class)
 public class SonarQubeGatewayResponseHandlerTest {

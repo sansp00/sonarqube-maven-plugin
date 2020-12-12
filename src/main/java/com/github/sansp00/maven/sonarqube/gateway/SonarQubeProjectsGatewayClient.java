@@ -7,11 +7,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.maven.shared.utils.StringUtils;
 
@@ -19,6 +14,11 @@ import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayExce
 import com.github.sansp00.maven.sonarqube.gateway.model.ProjectCreateResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.ProjectSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.Visibility;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 public class SonarQubeProjectsGatewayClient {
 	private final String baseUri;

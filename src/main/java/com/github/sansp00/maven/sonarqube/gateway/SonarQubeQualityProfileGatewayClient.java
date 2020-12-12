@@ -1,14 +1,14 @@
 package com.github.sansp00.maven.sonarqube.gateway;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-
 import org.apache.maven.shared.utils.StringUtils;
 
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayClientException;
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 public class SonarQubeQualityProfileGatewayClient {
 	private final String baseUri;

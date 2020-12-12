@@ -17,34 +17,34 @@
 		<project.java.version>1.8</project.java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<maven.version>3.6.1</maven.version>
+		<maven.version>3.6.3</maven.version>
 		<maven-shared.version>3.0.0</maven-shared.version>
 		<maven-plugin-tools.version>3.6.0</maven-plugin-tools.version>
-		<jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
-		<commons-lang3.version>3.9</commons-lang3.version>
+		<jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
+		<commons-lang3.version>3.11</commons-lang3.version>
 		<commons-io.version>2.5</commons-io.version>
-		<commons-math3.version>3.2</commons-math3.version>
+		<commons-math3.version>3.6.1</commons-math3.version>
 		<commons-collections4.version>4.4</commons-collections4.version>
-		<jackson.version>2.9.7</jackson.version>
-		<jackson-datatype-jsr310.version>2.9.7</jackson-datatype-jsr310.version>
-		<jackson-module-parameter-names.version>2.9.7</jackson-module-parameter-names.version>
-		<jackson-datatype-jdk8.version>2.9.7</jackson-datatype-jdk8.version>
-		<jackson-jaxrs-json-provider.version>2.9.7</jackson-jaxrs-json-provider.version>
-		<jersey.version>2.29</jersey.version>
-		<mapstruct.version>1.3.1.Final</mapstruct.version>
+		<jackson.version>2.12.0</jackson.version>
+		<jackson-datatype-jsr310.version>2.12.0</jackson-datatype-jsr310.version>
+		<jackson-module-parameter-names.version>2.12.0</jackson-module-parameter-names.version>
+		<jackson-datatype-jdk8.version>2.12.0</jackson-datatype-jdk8.version>
+		<jackson-jaxrs-json-provider.version>2.12.0</jackson-jaxrs-json-provider.version>
+		<jersey.version>3.0.0</jersey.version>
+		<mapstruct.version>1.4.1.Final</mapstruct.version>
 		<markdowngenerator.version>1.3.0.0</markdowngenerator.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<sonar-maven-plugin.version>3.2</sonar-maven-plugin.version>
 		<maven-invoker-plugin.version>1.8</maven-invoker-plugin.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-		<maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+		<maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
 		<lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
-		<mockito-core.version>3.0.0</mockito-core.version>
+		<mockito-core.version>3.6.28</mockito-core.version>
 		<!-- <pojotester.version>0.7.6</pojotester.version> -->
 		<pojotester.version>0.9.0</pojotester.version>
-		<wiremock.version>2.24.1</wiremock.version>
-		<jakarta.xml.bind-api.version>2.3.2</jakarta.xml.bind-api.version>
-		<jaxb-runtime.version>2.3.2</jaxb-runtime.version>
+		<wiremock.version>2.27.2</wiremock.version>
+		<jakarta.xml.bind-api.version>3.0.0</jakarta.xml.bind-api.version>
+		<jaxb-runtime.version>3.0.0</jaxb-runtime.version>
 	</properties>
 	<dependencies>
 		<dependency>

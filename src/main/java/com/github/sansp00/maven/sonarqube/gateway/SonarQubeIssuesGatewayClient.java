@@ -5,9 +5,6 @@ import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-
 import org.apache.commons.collections4.CollectionUtils;
 
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
@@ -16,6 +13,9 @@ import com.github.sansp00.maven.sonarqube.gateway.model.IssueTypes;
 import com.github.sansp00.maven.sonarqube.gateway.model.IssuesSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.SearchAdditionnalFields;
 import com.github.sansp00.maven.sonarqube.gateway.model.SearchSortFields;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
 
 public class SonarQubeIssuesGatewayClient {
     private final String baseUri;

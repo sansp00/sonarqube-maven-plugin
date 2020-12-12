@@ -7,9 +7,6 @@ import java.util.Comparator;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-
 import org.codehaus.plexus.util.StringUtils;
 
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
@@ -17,6 +14,9 @@ import com.github.sansp00.maven.sonarqube.gateway.model.Analysis;
 import com.github.sansp00.maven.sonarqube.gateway.model.Category;
 import com.github.sansp00.maven.sonarqube.gateway.model.ProjectAnalysesSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.converter.DateTimeConverter;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
 
 public class SonarQubeProjectAnalysesGatewayClient {
 	private final String baseUri;

@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-
 import org.apache.commons.collections4.CollectionUtils;
 import org.codehaus.plexus.util.StringUtils;
 
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
 import com.github.sansp00.maven.sonarqube.gateway.model.ComponentSearchResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.ComponentShowResponse;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
 
 public class SonarQubeComponentsGatewayClient {
 	private final String baseUri;

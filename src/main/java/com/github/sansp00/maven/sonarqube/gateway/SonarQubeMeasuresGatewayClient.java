@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.WebTarget;
-
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import com.github.sansp00.maven.sonarqube.gateway.exception.SonarQubeGatewayException;
 import com.github.sansp00.maven.sonarqube.gateway.model.MeasureComponentResponse;
 import com.github.sansp00.maven.sonarqube.gateway.model.MeasureSearchHistoryResponse;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.WebTarget;
 
 public class SonarQubeMeasuresGatewayClient {
 	private final String baseUri;
